@@ -61,6 +61,8 @@ int main()
         processInput(window);
 
         // Rendering
+        glClearColor(0.32f, 0.12f, 0.5f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
 
 
         // Check and Call events and swap the buffers
