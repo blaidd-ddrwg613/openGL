@@ -211,8 +211,8 @@ CMakeFiles\mygame.dir\all: thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\all
 CMakeFiles\mygame.dir\all: thirdparty\glad\CMakeFiles\glad.dir\all
 CMakeFiles\mygame.dir\all: thirdparty\stb_image\CMakeFiles\stb_image.dir\all
 CMakeFiles\mygame.dir\all: thirdparty\stb_truetype\CMakeFiles\stb_truetype.dir\all
-CMakeFiles\mygame.dir\all: thirdparty\raudio\CMakeFiles\raudio.dir\all
 CMakeFiles\mygame.dir\all: thirdparty\imgui-docking\CMakeFiles\imgui.dir\all
+CMakeFiles\mygame.dir\all: thirdparty\raudio\CMakeFiles\raudio.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mygame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\mygame.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mygame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\mygame.dir\build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\C++\openGL\cmake-build-debug\CMakeFiles --progress-num=27,28,29 "Built target mygame"
