@@ -109,8 +109,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nalxhw"
-      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nalxhw"
+      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pzzftr"
+      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pzzftr"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -119,10 +119,27 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nalxhw
+        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pzzftr
         
-        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/ninja/win/x64/ninja.exe -v cmTC_dbcb4 && [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_dbcb4.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_dbcb4.dir\\ /FS -c "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
-        [2/2] cmd.exe /C "cd . && "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_dbcb4.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_dbcb4.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_dbcb4.exe /implib:cmTC_dbcb4.lib /pdb:cmTC_dbcb4.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_2cf66\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_2cf66.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_2cf66.dir\\build
+        Building C object CMakeFiles/cmTC_2cf66.dir/CMakeCCompilerABI.c.obj
+        	"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_2cf66.dir\\CMakeCCompilerABI.c.obj.d --working-dir=D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-pzzftr --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\danie\\AppData\\Local\\Temp\\nm10EA.tmp
+        CMakeCCompilerABI.c
+        Linking C executable cmTC_2cf66.exe
+        	"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_2cf66.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2cf66.dir\\objects1.rsp @C:\\Users\\danie\\AppData\\Local\\Temp\\nm1252.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_2cf66.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_2cf66.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_2cf66.dir/manifest.res CMakeFiles\\cmTC_2cf66.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2cf66.dir\\objects1.rsp /out:cmTC_2cf66.exe /implib:cmTC_2cf66.lib /pdb:D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-pzzftr\\cmTC_2cf66.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_2cf66.dir/intermediate.manifest CMakeFiles\\cmTC_2cf66.dir/manifest.res
+        MT:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_2cf66.dir/intermediate.manifest /out:CMakeFiles\\cmTC_2cf66.dir/embed.manifest /notify_update
+        RC Pass 2:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_2cf66.dir/manifest.res CMakeFiles\\cmTC_2cf66.dir/manifest.rc
+        FINAL LINK:
+        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2cf66.dir\\objects1.rsp /out:cmTC_2cf66.exe /implib:cmTC_2cf66.lib /pdb:D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-pzzftr\\cmTC_2cf66.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_2cf66.dir/intermediate.manifest CMakeFiles\\cmTC_2cf66.dir/manifest.res
         
       exitCode: 0
   -
@@ -134,8 +151,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5d8yll"
-      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5d8yll"
+      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7wgh5j"
+      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7wgh5j"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -144,10 +161,27 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5d8yll
+        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7wgh5j
         
-        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/ninja/win/x64/ninja.exe -v cmTC_2dcb3 && [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd /showIncludes /FoCMakeFiles\\cmTC_2dcb3.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_2dcb3.dir\\ /FS -c "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
-        [2/2] cmd.exe /C "cd . && "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_2dcb3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_2dcb3.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_2dcb3.exe /implib:cmTC_2dcb3.lib /pdb:cmTC_2dcb3.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_ed385\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_ed385.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_ed385.dir\\build
+        Building CXX object CMakeFiles/cmTC_ed385.dir/CMakeCXXCompilerABI.cpp.obj
+        	"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_ed385.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-7wgh5j --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\danie\\AppData\\Local\\Temp\\nm154F.tmp
+        CMakeCXXCompilerABI.cpp
+        Linking CXX executable cmTC_ed385.exe
+        	"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_ed385.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_ed385.dir\\objects1.rsp @C:\\Users\\danie\\AppData\\Local\\Temp\\nm15AE.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_ed385.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_ed385.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_ed385.dir/manifest.res CMakeFiles\\cmTC_ed385.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_ed385.dir\\objects1.rsp /out:cmTC_ed385.exe /implib:cmTC_ed385.lib /pdb:D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-7wgh5j\\cmTC_ed385.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_ed385.dir/intermediate.manifest CMakeFiles\\cmTC_ed385.dir/manifest.res
+        MT:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_ed385.dir/intermediate.manifest /out:CMakeFiles\\cmTC_ed385.dir/embed.manifest /notify_update
+        RC Pass 2:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_ed385.dir/manifest.res CMakeFiles\\cmTC_ed385.dir/manifest.rc
+        FINAL LINK:
+        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_ed385.dir\\objects1.rsp /out:cmTC_ed385.exe /implib:cmTC_ed385.lib /pdb:D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-7wgh5j\\cmTC_ed385.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_ed385.dir/intermediate.manifest CMakeFiles\\cmTC_ed385.dir/manifest.res
         
       exitCode: 0
   -
@@ -161,8 +195,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o578z5"
-      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o578z5"
+      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wwicy8"
+      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wwicy8"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_MODULE_PATH: "D:/C++/openGL/thirdparty/glfw-3.3.2/CMake/modules"
@@ -170,15 +204,19 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o578z5
+        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wwicy8
         
-        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/ninja/win/x64/ninja.exe -v cmTC_ca53b && [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_ca53b.dir\\src.c.obj /FdCMakeFiles\\cmTC_ca53b.dir\\ /FS -c D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-o578z5\\src.c
-        FAILED: CMakeFiles/cmTC_ca53b.dir/src.c.obj 
-        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_ca53b.dir\\src.c.obj /FdCMakeFiles\\cmTC_ca53b.dir\\ /FS -c D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-o578z5\\src.c
-        D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-o578z5\\src.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory
-        ninja: build stopped: subcommand failed.
+        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_f56f3\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_f56f3.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_f56f3.dir\\build
+        Building C object CMakeFiles/cmTC_f56f3.dir/src.c.obj
+        	"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_f56f3.dir\\src.c.obj.d --working-dir=D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-wwicy8 --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\danie\\AppData\\Local\\Temp\\nm188B.tmp
+        src.c
+        D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-wwicy8\\src.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory
+        NMAKE : fatal error U1077: '"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_f56f3.dir\\src.c.obj.d --working-dir=D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-wwicy8 --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\danie\\AppData\\Local\\Temp\\nm188B.tmp' : return code '0x2'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_f56f3.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_f56f3.dir\\build' : return code '0x2'
+        Stop.
         
-      exitCode: 1
+      exitCode: 2
   -
     kind: "try_compile-v1"
     backtrace:
@@ -189,8 +227,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nnfctu"
-      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nnfctu"
+      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2n9bhl"
+      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2n9bhl"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_MODULE_PATH: "D:/C++/openGL/thirdparty/glfw-3.3.2/CMake/modules"
@@ -198,17 +236,29 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-nnfctu
+        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2n9bhl
         
-        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/ninja/win/x64/ninja.exe -v cmTC_4f3ec && [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_4f3ec.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_4f3ec.dir\\ /FS -c D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-nnfctu\\CheckFunctionExists.c
-        [2/2] cmd.exe /C "cd . && "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_4f3ec.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4f3ec.dir\\CheckFunctionExists.c.obj  /out:cmTC_4f3ec.exe /implib:cmTC_4f3ec.lib /pdb:cmTC_4f3ec.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        FAILED: cmTC_4f3ec.exe 
-        cmd.exe /C "cd . && "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_4f3ec.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4f3ec.dir\\CheckFunctionExists.c.obj  /out:cmTC_4f3ec.exe /implib:cmTC_4f3ec.lib /pdb:cmTC_4f3ec.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4f3ec.dir\\CheckFunctionExists.c.obj /out:cmTC_4f3ec.exe /implib:cmTC_4f3ec.lib /pdb:cmTC_4f3ec.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_4f3ec.dir/intermediate.manifest CMakeFiles\\cmTC_4f3ec.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_0f377\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_0f377.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_0f377.dir\\build
+        Building C object CMakeFiles/cmTC_0f377.dir/CheckFunctionExists.c.obj
+        	"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_0f377.dir\\CheckFunctionExists.c.obj.d --working-dir=D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-2n9bhl --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\danie\\AppData\\Local\\Temp\\nm1927.tmp
+        CheckFunctionExists.c
+        Linking C executable cmTC_0f377.exe
+        	"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_0f377.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_0f377.dir\\objects1.rsp @C:\\Users\\danie\\AppData\\Local\\Temp\\nm1976.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_0f377.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_0f377.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_0f377.dir/manifest.res CMakeFiles\\cmTC_0f377.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_0f377.dir\\objects1.rsp /out:cmTC_0f377.exe /implib:cmTC_0f377.lib /pdb:D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-2n9bhl\\cmTC_0f377.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_0f377.dir/intermediate.manifest CMakeFiles\\cmTC_0f377.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_0f377.dir\\objects1.rsp /out:cmTC_0f377.exe /implib:cmTC_0f377.lib /pdb:D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-2n9bhl\\cmTC_0f377.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_0f377.dir/intermediate.manifest CMakeFiles\\cmTC_0f377.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: cannot open file 'pthreads.lib'
-        ninja: build stopped: subcommand failed.
+        NMAKE : fatal error U1077: '"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_0f377.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_0f377.dir\\objects1.rsp @C:\\Users\\danie\\AppData\\Local\\Temp\\nm1976.tmp' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_0f377.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_0f377.dir\\build' : return code '0x2'
+        Stop.
         
-      exitCode: 1
+      exitCode: 2
   -
     kind: "try_compile-v1"
     backtrace:
@@ -219,8 +269,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jr51h8"
-      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jr51h8"
+      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t0l8an"
+      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t0l8an"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_MODULE_PATH: "D:/C++/openGL/thirdparty/glfw-3.3.2/CMake/modules"
@@ -228,15 +278,27 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jr51h8
+        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t0l8an
         
-        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/ninja/win/x64/ninja.exe -v cmTC_a99b3 && [1/2] C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_a99b3.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_a99b3.dir\\ /FS -c D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-jr51h8\\CheckFunctionExists.c
-        [2/2] cmd.exe /C "cd . && "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_a99b3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a99b3.dir\\CheckFunctionExists.c.obj  /out:cmTC_a99b3.exe /implib:cmTC_a99b3.lib /pdb:cmTC_a99b3.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        FAILED: cmTC_a99b3.exe 
-        cmd.exe /C "cd . && "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_a99b3.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a99b3.dir\\CheckFunctionExists.c.obj  /out:cmTC_a99b3.exe /implib:cmTC_a99b3.lib /pdb:cmTC_a99b3.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a99b3.dir\\CheckFunctionExists.c.obj /out:cmTC_a99b3.exe /implib:cmTC_a99b3.lib /pdb:cmTC_a99b3.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_a99b3.dir/intermediate.manifest CMakeFiles\\cmTC_a99b3.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_c3851\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_c3851.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_c3851.dir\\build
+        Building C object CMakeFiles/cmTC_c3851.dir/CheckFunctionExists.c.obj
+        	"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_c3851.dir\\CheckFunctionExists.c.obj.d --working-dir=D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t0l8an --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\danie\\AppData\\Local\\Temp\\nm1A21.tmp
+        CheckFunctionExists.c
+        Linking C executable cmTC_c3851.exe
+        	"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c3851.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_c3851.dir\\objects1.rsp @C:\\Users\\danie\\AppData\\Local\\Temp\\nm1A70.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_c3851.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_c3851.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_c3851.dir/manifest.res CMakeFiles\\cmTC_c3851.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_c3851.dir\\objects1.rsp /out:cmTC_c3851.exe /implib:cmTC_c3851.lib /pdb:D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t0l8an\\cmTC_c3851.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_c3851.dir/intermediate.manifest CMakeFiles\\cmTC_c3851.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_c3851.dir\\objects1.rsp /out:cmTC_c3851.exe /implib:cmTC_c3851.lib /pdb:D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t0l8an\\cmTC_c3851.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_c3851.dir/intermediate.manifest CMakeFiles\\cmTC_c3851.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: cannot open file 'pthread.lib'
-        ninja: build stopped: subcommand failed.
+        NMAKE : fatal error U1077: '"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c3851.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_c3851.dir\\objects1.rsp @C:\\Users\\danie\\AppData\\Local\\Temp\\nm1A70.tmp' : return code '0xffffffff'
+        Stop.
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_c3851.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_c3851.dir\\build' : return code '0x2'
+        Stop.
         
-      exitCode: 1
+      exitCode: 2
 ...
