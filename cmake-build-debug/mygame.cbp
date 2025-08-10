@@ -4,17 +4,17 @@
 	<Project>
 		<Option title="mygame"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="msvc8"/>
+		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;CMake Files\thirdparty\;CMake Files\thirdparty\glfw-3.3.2\;CMake Files\thirdparty\glfw-3.3.2\src\;CMake Files\thirdparty\glad\;CMake Files\thirdparty\glm\;CMake Files\thirdparty\imgui-docking\;CMake Files\thirdparty\stb_image\;CMake Files\thirdparty\stb_truetype\;CMake Files\thirdparty\raudio\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="D:/C++/openGL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 all"/>
-					<CompileFile command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="mygame">
@@ -22,7 +22,7 @@
 				<Option working_dir="D:/C++/openGL/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLFW_INCLUDE_NONE=1"/>
 					<Add option="-DRESOURCES_PATH=&quot;D:/C++/openGL/resources/&quot;"/>
@@ -36,21 +36,19 @@
 					<Add directory="D:/C++/openGL/thirdparty/stb_truetype/include"/>
 					<Add directory="D:/C++/openGL/thirdparty/raudio/include"/>
 					<Add directory="D:/C++/openGL/thirdparty/imgui-docking/imgui"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\ATLMFC\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 mygame"/>
-					<CompileFile command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 mygame"/>
+					<CompileFile command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="mygame/fast">
@@ -58,7 +56,7 @@
 				<Option working_dir="D:/C++/openGL/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLFW_INCLUDE_NONE=1"/>
 					<Add option="-DRESOURCES_PATH=&quot;D:/C++/openGL/resources/&quot;"/>
@@ -72,360 +70,339 @@
 					<Add directory="D:/C++/openGL/thirdparty/stb_truetype/include"/>
 					<Add directory="D:/C++/openGL/thirdparty/raudio/include"/>
 					<Add directory="D:/C++/openGL/thirdparty/imgui-docking/imgui"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\ATLMFC\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 mygame/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 mygame/fast"/>
+					<CompileFile command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="D:/C++/openGL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
-					<CompileFile command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="D:/C++/openGL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glfw">
-				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src/glfw3.lib" prefix_auto="0" extension_auto="0"/>
+				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/C++/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
 					<Add option="-D_UNICODE"/>
-					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-DUNICODE"/>
+					<Add option="-DWINVER=0x0501"/>
 					<Add directory="D:/C++/openGL/thirdparty/glfw-3.3.2/include"/>
 					<Add directory="D:/C++/openGL/thirdparty/glfw-3.3.2/src"/>
 					<Add directory="D:/C++/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\ATLMFC\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\glfw-3.3.2\src\Makefile VERBOSE=1 glfw"/>
-					<CompileFile command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\glfw-3.3.2\src\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\glfw-3.3.2\src\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\glfw-3.3.2\src\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src/Makefile&quot;  VERBOSE=1 glfw"/>
+					<CompileFile command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glfw/fast">
-				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src/glfw3.lib" prefix_auto="0" extension_auto="0"/>
+				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/C++/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
 					<Add option="-D_UNICODE"/>
-					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-DUNICODE"/>
+					<Add option="-DWINVER=0x0501"/>
 					<Add directory="D:/C++/openGL/thirdparty/glfw-3.3.2/include"/>
 					<Add directory="D:/C++/openGL/thirdparty/glfw-3.3.2/src"/>
 					<Add directory="D:/C++/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\ATLMFC\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\glfw-3.3.2\src\Makefile VERBOSE=1 glfw/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\glfw-3.3.2\src\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\glfw-3.3.2\src\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\glfw-3.3.2\src\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
+					<CompileFile command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glad">
-				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/glad/glad.lib" prefix_auto="0" extension_auto="0"/>
+				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/glad/libglad.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/C++/openGL/cmake-build-debug/thirdparty/glad"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="D:/C++/openGL/thirdparty/glad/include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\ATLMFC\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\glad\Makefile VERBOSE=1 glad"/>
-					<CompileFile command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\glad\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\glad\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\glad\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/glad/Makefile&quot;  VERBOSE=1 glad"/>
+					<CompileFile command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/glad/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/glad/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/glad/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glad/fast">
-				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/glad/glad.lib" prefix_auto="0" extension_auto="0"/>
+				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/glad/libglad.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/C++/openGL/cmake-build-debug/thirdparty/glad"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="D:/C++/openGL/thirdparty/glad/include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\ATLMFC\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\glad\Makefile VERBOSE=1 glad/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\glad\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\glad\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\glad\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/glad/Makefile&quot;  VERBOSE=1 glad/fast"/>
+					<CompileFile command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/glad/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/glad/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/glad/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="stb_image">
-				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/stb_image/stb_image.lib" prefix_auto="0" extension_auto="0"/>
+				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/stb_image/libstb_image.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/C++/openGL/cmake-build-debug/thirdparty/stb_image"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="D:/C++/openGL/thirdparty/stb_image/include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\ATLMFC\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\stb_image\Makefile VERBOSE=1 stb_image"/>
-					<CompileFile command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\stb_image\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\stb_image\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\stb_image\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/stb_image/Makefile&quot;  VERBOSE=1 stb_image"/>
+					<CompileFile command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/stb_image/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/stb_image/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/stb_image/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="stb_image/fast">
-				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/stb_image/stb_image.lib" prefix_auto="0" extension_auto="0"/>
+				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/stb_image/libstb_image.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/C++/openGL/cmake-build-debug/thirdparty/stb_image"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="D:/C++/openGL/thirdparty/stb_image/include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\ATLMFC\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\stb_image\Makefile VERBOSE=1 stb_image/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\stb_image\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\stb_image\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\stb_image\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/stb_image/Makefile&quot;  VERBOSE=1 stb_image/fast"/>
+					<CompileFile command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/stb_image/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/stb_image/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/stb_image/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="stb_truetype">
-				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/stb_truetype/stb_truetype.lib" prefix_auto="0" extension_auto="0"/>
+				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/stb_truetype/libstb_truetype.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/C++/openGL/cmake-build-debug/thirdparty/stb_truetype"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="D:/C++/openGL/thirdparty/stb_truetype/include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\ATLMFC\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\stb_truetype\Makefile VERBOSE=1 stb_truetype"/>
-					<CompileFile command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\stb_truetype\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\stb_truetype\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\stb_truetype\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/stb_truetype/Makefile&quot;  VERBOSE=1 stb_truetype"/>
+					<CompileFile command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/stb_truetype/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/stb_truetype/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/stb_truetype/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="stb_truetype/fast">
-				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/stb_truetype/stb_truetype.lib" prefix_auto="0" extension_auto="0"/>
+				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/stb_truetype/libstb_truetype.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/C++/openGL/cmake-build-debug/thirdparty/stb_truetype"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="D:/C++/openGL/thirdparty/stb_truetype/include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\ATLMFC\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\stb_truetype\Makefile VERBOSE=1 stb_truetype/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\stb_truetype\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\stb_truetype\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\stb_truetype\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/stb_truetype/Makefile&quot;  VERBOSE=1 stb_truetype/fast"/>
+					<CompileFile command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/stb_truetype/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/stb_truetype/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/stb_truetype/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="raudio">
-				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/raudio/raudio.lib" prefix_auto="0" extension_auto="0"/>
+				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/raudio/libraudio.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/C++/openGL/cmake-build-debug/thirdparty/raudio"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="D:/C++/openGL/thirdparty/raudio/include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\ATLMFC\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\raudio\Makefile VERBOSE=1 raudio"/>
-					<CompileFile command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\raudio\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\raudio\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\raudio\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/raudio/Makefile&quot;  VERBOSE=1 raudio"/>
+					<CompileFile command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/raudio/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/raudio/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/raudio/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="raudio/fast">
-				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/raudio/raudio.lib" prefix_auto="0" extension_auto="0"/>
+				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/raudio/libraudio.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/C++/openGL/cmake-build-debug/thirdparty/raudio"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="D:/C++/openGL/thirdparty/raudio/include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\ATLMFC\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\raudio\Makefile VERBOSE=1 raudio/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\raudio\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\raudio\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\raudio\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/raudio/Makefile&quot;  VERBOSE=1 raudio/fast"/>
+					<CompileFile command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/raudio/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/raudio/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/raudio/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="imgui">
-				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/imgui-docking/imgui.lib" prefix_auto="0" extension_auto="0"/>
+				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/imgui-docking/libimgui.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/C++/openGL/cmake-build-debug/thirdparty/imgui-docking"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="D:/C++/openGL/thirdparty/imgui-docking/imgui"/>
 					<Add directory="D:/C++/openGL/thirdparty/glfw-3.3.2/include"/>
 					<Add directory="D:/C++/openGL/thirdparty/glad/include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\ATLMFC\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\imgui-docking\Makefile VERBOSE=1 imgui"/>
-					<CompileFile command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\imgui-docking\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\imgui-docking\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\imgui-docking\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/imgui-docking/Makefile&quot;  VERBOSE=1 imgui"/>
+					<CompileFile command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/imgui-docking/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/imgui-docking/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/imgui-docking/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="imgui/fast">
-				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/imgui-docking/imgui.lib" prefix_auto="0" extension_auto="0"/>
+				<Option output="D:/C++/openGL/cmake-build-debug/thirdparty/imgui-docking/libimgui.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/C++/openGL/cmake-build-debug/thirdparty/imgui-docking"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="D:/C++/openGL/thirdparty/imgui-docking/imgui"/>
 					<Add directory="D:/C++/openGL/thirdparty/glfw-3.3.2/include"/>
 					<Add directory="D:/C++/openGL/thirdparty/glad/include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\ATLMFC\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\VS\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\imgui-docking\Makefile VERBOSE=1 imgui/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\imgui-docking\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\imgui-docking\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\C++\openGL\cmake-build-debug\thirdparty\imgui-docking\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/imgui-docking/Makefile&quot;  VERBOSE=1 imgui/fast"/>
+					<CompileFile command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/imgui-docking/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/imgui-docking/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/C++/openGL/cmake-build-debug/thirdparty/imgui-docking/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
 		<Unit filename="D:/C++/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src/glfw_config.h">
 			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="D:/C++/openGL/src/Shader.cpp">
+			<Option target="mygame"/>
 		</Unit>
 		<Unit filename="D:/C++/openGL/src/main.cpp">
 			<Option target="mygame"/>

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/raudio.dir/src/raudio.c.obj"
   "CMakeFiles/raudio.dir/src/raudio.c.obj.d"
-  "raudio.lib"
-  "raudio.pdb"
+  "libraudio.a"
+  "libraudio.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

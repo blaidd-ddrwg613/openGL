@@ -1,0 +1,2 @@
+C:\Users\danie\AppData\Local\Programs\CLION2~1\bin\mingw\bin\ar.exe qc libraudio.a CMakeFiles/raudio.dir/src/raudio.c.obj
+C:\Users\danie\AppData\Local\Programs\CLION2~1\bin\mingw\bin\ranlib.exe libraudio.a

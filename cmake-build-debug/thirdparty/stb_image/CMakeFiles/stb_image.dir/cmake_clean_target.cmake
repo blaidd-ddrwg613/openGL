@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "stb_image.lib"
+  "libstb_image.a"
 )

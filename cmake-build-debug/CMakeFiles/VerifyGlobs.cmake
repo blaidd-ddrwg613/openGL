@@ -5,6 +5,7 @@ cmake_policy(SET CMP0009 NEW)
 # MY_SOURCES at CMakeLists.txt:37 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/C++/openGL/src/*.cpp")
 set(OLD_GLOB
+  "D:/C++/openGL/src/Shader.cpp"
   "D:/C++/openGL/src/main.cpp"
   "D:/C++/openGL/src/openglErrorReporting.cpp"
   )

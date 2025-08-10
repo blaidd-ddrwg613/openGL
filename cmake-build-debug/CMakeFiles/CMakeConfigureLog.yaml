@@ -17,43 +17,19 @@ events:
       - "CMakeLists.txt:16 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe 
+      Compiler: C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/gcc.exe 
       Build flags: 
       Id flags:  
       
       The output was:
       0
-      Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34120 for x64
-      Copyright (C) Microsoft Corporation.  All rights reserved.
-      
-      CMakeCCompilerId.c
-      Microsoft (R) Incremental Linker Version 14.41.34120.0
-      Copyright (C) Microsoft Corporation.  All rights reserved.
-      
-      /out:CMakeCCompilerId.exe 
-      CMakeCCompilerId.obj 
       
       
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
       
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+      The C compiler identification is GNU, found in:
+        D:/C++/openGL/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/a.exe
       
-      The C compiler identification is MSVC, found in:
-        D:/C++/openGL/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
-      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
-      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:16 (project)"
-    message: |
-      Detecting C compiler /showIncludes prefix:
-        main.c
-        Note: including file: D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\ShowIncludes\\foo.h
-        
-      Found prefix "Note: including file: "
   -
     kind: "message-v1"
     backtrace:
@@ -63,43 +39,19 @@ events:
       - "CMakeLists.txt:16 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe 
+      Compiler: C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/g++.exe 
       Build flags: 
       Id flags:  
       
       The output was:
       0
-      Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34120 for x64
-      Copyright (C) Microsoft Corporation.  All rights reserved.
-      
-      CMakeCXXCompilerId.cpp
-      Microsoft (R) Incremental Linker Version 14.41.34120.0
-      Copyright (C) Microsoft Corporation.  All rights reserved.
-      
-      /out:CMakeCXXCompilerId.exe 
-      CMakeCXXCompilerId.obj 
       
       
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
       
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      The CXX compiler identification is GNU, found in:
+        D:/C++/openGL/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/a.exe
       
-      The CXX compiler identification is MSVC, found in:
-        D:/C++/openGL/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
-      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
-      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:16 (project)"
-    message: |
-      Detecting CXX compiler /showIncludes prefix:
-        main.c
-        Note: including file: D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\ShowIncludes\\foo.h
-        
-      Found prefix "Note: including file: "
   -
     kind: "try_compile-v1"
     backtrace:
@@ -109,39 +61,183 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pzzftr"
-      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pzzftr"
+      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gmdslk"
+      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gmdslk"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
-      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pzzftr
+        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gmdslk
         
-        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_2cf66\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_2cf66.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_2cf66.dir\\build
-        Building C object CMakeFiles/cmTC_2cf66.dir/CMakeCCompilerABI.c.obj
-        	"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_2cf66.dir\\CMakeCCompilerABI.c.obj.d --working-dir=D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-pzzftr --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\danie\\AppData\\Local\\Temp\\nm10EA.tmp
-        CMakeCCompilerABI.c
-        Linking C executable cmTC_2cf66.exe
-        	"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_2cf66.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2cf66.dir\\objects1.rsp @C:\\Users\\danie\\AppData\\Local\\Temp\\nm1252.tmp
-        Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_2cf66.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_2cf66.dir/embed.manifest
-        RC Pass 1:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_2cf66.dir/manifest.res CMakeFiles\\cmTC_2cf66.dir/manifest.rc
-        LINK Pass 1:
-        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2cf66.dir\\objects1.rsp /out:cmTC_2cf66.exe /implib:cmTC_2cf66.lib /pdb:D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-pzzftr\\cmTC_2cf66.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_2cf66.dir/intermediate.manifest CMakeFiles\\cmTC_2cf66.dir/manifest.res
-        MT:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_2cf66.dir/intermediate.manifest /out:CMakeFiles\\cmTC_2cf66.dir/embed.manifest /notify_update
-        RC Pass 2:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_2cf66.dir/manifest.res CMakeFiles\\cmTC_2cf66.dir/manifest.rc
-        FINAL LINK:
-        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_2cf66.dir\\objects1.rsp /out:cmTC_2cf66.exe /implib:cmTC_2cf66.lib /pdb:D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-pzzftr\\cmTC_2cf66.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_2cf66.dir/intermediate.manifest CMakeFiles\\cmTC_2cf66.dir/manifest.res
+        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_8662f/fast && C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_8662f.dir\\build.make CMakeFiles/cmTC_8662f.dir/build
+        mingw32-make[1]: Entering directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gmdslk'
+        Building C object CMakeFiles/cmTC_8662f.dir/CMakeCCompilerABI.c.obj
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_8662f.dir\\CMakeCCompilerABI.c.obj -c "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_8662f.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_8662f.dir\\'
+         C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_8662f.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\danie\\AppData\\Local\\Temp\\ccDYcdDV.s
+        GNU C17 (GCC) version 13.1.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0-p4, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
+        ignoring nonexistent directory "/win/include"
+        ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../include"
+        ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
+        ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
+         C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include
+         C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
+         C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: 2aa4fcf5c9208168c5e2d38a58fc2a97
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_8662f.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_8662f.dir\\'
+         as -v -o CMakeFiles\\cmTC_8662f.dir\\CMakeCCompilerABI.c.obj C:\\Users\\danie\\AppData\\Local\\Temp\\ccDYcdDV.s
+        GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40
+        COMPILER_PATH=C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_8662f.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_8662f.dir\\CMakeCCompilerABI.c.'
+        Linking C executable cmTC_8662f.exe
+        "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_8662f.dir\\link.txt --verbose=1
+        "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_8662f.dir/objects.a
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_8662f.dir/objects.a @CMakeFiles\\cmTC_8662f.dir\\objects1.rsp
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe  -v -Wl,--whole-archive CMakeFiles\\cmTC_8662f.dir/objects.a -Wl,--no-whole-archive -o cmTC_8662f.exe -Wl,--out-implib,libcmTC_8662f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe
+        COLLECT_LTO_WRAPPER=C:/Users/danie/AppData/Local/Programs/CLion\\ 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COMPILER_PATH=C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8662f.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_8662f.'
+         C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_8662f.exe C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles\\cmTC_8662f.dir/objects.a --no-whole-archive --out-implib libcmTC_8662f.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8662f.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_8662f.'
+        mingw32-make[1]: Leaving directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gmdslk'
         
       exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+          add: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+          add: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+          add: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        end of search list found
+        collapse include dir [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include] ==> [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        collapse include dir [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include] ==> [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/include]
+        collapse include dir [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed] ==> [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        collapse include dir [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include] ==> [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/x86_64-w64-mingw32/include]
+        implicit include dirs: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/include;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/x86_64-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gmdslk]
+        ignore line: []
+        ignore line: [Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_8662f/fast && C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_8662f.dir\\build.make CMakeFiles/cmTC_8662f.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gmdslk']
+        ignore line: [Building C object CMakeFiles/cmTC_8662f.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_8662f.dir\\CMakeCCompilerABI.c.obj -c "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_8662f.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_8662f.dir\\']
+        ignore line: [ C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_8662f.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\danie\\AppData\\Local\\Temp\\ccDYcdDV.s]
+        ignore line: [GNU C17 (GCC) version 13.1.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0-p4  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/win/include"]
+        ignore line: [ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../include"]
+        ignore line: [ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        ignore line: [ C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+        ignore line: [ C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        ignore line: [ C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 2aa4fcf5c9208168c5e2d38a58fc2a97]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_8662f.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_8662f.dir\\']
+        ignore line: [ as -v -o CMakeFiles\\cmTC_8662f.dir\\CMakeCCompilerABI.c.obj C:\\Users\\danie\\AppData\\Local\\Temp\\ccDYcdDV.s]
+        ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40]
+        ignore line: [COMPILER_PATH=C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\\cmTC_8662f.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_8662f.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_8662f.exe]
+        ignore line: ["C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_8662f.dir\\link.txt --verbose=1]
+        ignore line: ["C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_8662f.dir/objects.a]
+        ignore line: [C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_8662f.dir/objects.a @CMakeFiles\\cmTC_8662f.dir\\objects1.rsp]
+        ignore line: [C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe  -v -Wl --whole-archive CMakeFiles\\cmTC_8662f.dir/objects.a -Wl --no-whole-archive -o cmTC_8662f.exe -Wl --out-implib libcmTC_8662f.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/Users/danie/AppData/Local/Programs/CLion\\ 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8662f.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_8662f.']
+        ignore line: [ C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_8662f.exe C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles\\cmTC_8662f.dir/objects.a --no-whole-archive --out-implib libcmTC_8662f.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8662f.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_8662f.']
+        ignore line: [mingw32-make[1]: Leaving directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gmdslk']
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
   -
     kind: "try_compile-v1"
     backtrace:
@@ -151,39 +247,201 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7wgh5j"
-      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7wgh5j"
+      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xfouif"
+      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xfouif"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
-      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7wgh5j
+        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xfouif
         
-        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_ed385\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_ed385.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_ed385.dir\\build
-        Building CXX object CMakeFiles/cmTC_ed385.dir/CMakeCXXCompilerABI.cpp.obj
-        	"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_ed385.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-7wgh5j --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\danie\\AppData\\Local\\Temp\\nm154F.tmp
-        CMakeCXXCompilerABI.cpp
-        Linking CXX executable cmTC_ed385.exe
-        	"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_ed385.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_ed385.dir\\objects1.rsp @C:\\Users\\danie\\AppData\\Local\\Temp\\nm15AE.tmp
-        Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_ed385.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_ed385.dir/embed.manifest
-        RC Pass 1:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_ed385.dir/manifest.res CMakeFiles\\cmTC_ed385.dir/manifest.rc
-        LINK Pass 1:
-        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_ed385.dir\\objects1.rsp /out:cmTC_ed385.exe /implib:cmTC_ed385.lib /pdb:D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-7wgh5j\\cmTC_ed385.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_ed385.dir/intermediate.manifest CMakeFiles\\cmTC_ed385.dir/manifest.res
-        MT:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_ed385.dir/intermediate.manifest /out:CMakeFiles\\cmTC_ed385.dir/embed.manifest /notify_update
-        RC Pass 2:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_ed385.dir/manifest.res CMakeFiles\\cmTC_ed385.dir/manifest.rc
-        FINAL LINK:
-        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_ed385.dir\\objects1.rsp /out:cmTC_ed385.exe /implib:cmTC_ed385.lib /pdb:D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-7wgh5j\\cmTC_ed385.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_ed385.dir/intermediate.manifest CMakeFiles\\cmTC_ed385.dir/manifest.res
+        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_006b6/fast && C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_006b6.dir\\build.make CMakeFiles/cmTC_006b6.dir/build
+        mingw32-make[1]: Entering directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xfouif'
+        Building CXX object CMakeFiles/cmTC_006b6.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\G__~1.EXE   -std=gnu++20 -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_006b6.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\G__~1.EXE
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-std=gnu++20' '-v' '-o' 'CMakeFiles\\cmTC_006b6.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_006b6.dir\\'
+         C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_006b6.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -std=gnu++20 -version -fdiagnostics-color=always -o C:\\Users\\danie\\AppData\\Local\\Temp\\cc4TEXdY.s
+        GNU C++20 (GCC) version 13.1.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0-p4, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"
+        ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"
+        ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"
+        ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
+        ignoring nonexistent directory "/win/include"
+        ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../include"
+        ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
+        ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "/mingw/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++
+         C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32
+         C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward
+         C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
+         C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include
+         C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
+         C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
+        End of search list.
+        Compiler executable checksum: e75de627edc3c57e31324b930b15b056
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-std=gnu++20' '-v' '-o' 'CMakeFiles\\cmTC_006b6.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_006b6.dir\\'
+         as -v -o CMakeFiles\\cmTC_006b6.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\danie\\AppData\\Local\\Temp\\cc4TEXdY.s
+        GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40
+        COMPILER_PATH=C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-std=gnu++20' '-v' '-o' 'CMakeFiles\\cmTC_006b6.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_006b6.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_006b6.exe
+        "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_006b6.dir\\link.txt --verbose=1
+        "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_006b6.dir/objects.a
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_006b6.dir/objects.a @CMakeFiles\\cmTC_006b6.dir\\objects1.rsp
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\G__~1.EXE  -v -Wl,--whole-archive CMakeFiles\\cmTC_006b6.dir/objects.a -Wl,--no-whole-archive -o cmTC_006b6.exe -Wl,--out-implib,libcmTC_006b6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\G__~1.EXE
+        COLLECT_LTO_WRAPPER=C:/Users/danie/AppData/Local/Programs/CLion\\ 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COMPILER_PATH=C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_006b6.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_006b6.'
+         C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_006b6.exe C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles\\cmTC_006b6.dir/objects.a --no-whole-archive --out-implib libcmTC_006b6.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_006b6.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_006b6.'
+        mingw32-make[1]: Leaving directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xfouif'
         
       exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
+          add: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
+          add: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
+          add: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+          add: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+          add: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+          add: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        end of search list found
+        collapse include dir [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++] ==> [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
+        collapse include dir [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32] ==> [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
+        collapse include dir [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward] ==> [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
+        collapse include dir [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include] ==> [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        collapse include dir [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include] ==> [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/include]
+        collapse include dir [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed] ==> [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        collapse include dir [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include] ==> [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/x86_64-w64-mingw32/include]
+        implicit include dirs: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/include;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/x86_64-w64-mingw32/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xfouif]
+        ignore line: []
+        ignore line: [Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_006b6/fast && C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_006b6.dir\\build.make CMakeFiles/cmTC_006b6.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xfouif']
+        ignore line: [Building CXX object CMakeFiles/cmTC_006b6.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\G__~1.EXE   -std=gnu++20 -fdiagnostics-color=always   -v -o CMakeFiles\\cmTC_006b6.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\G__~1.EXE]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-std=gnu++20' '-v' '-o' 'CMakeFiles\\cmTC_006b6.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_006b6.dir\\']
+        ignore line: [ C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_006b6.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -std=gnu++20 -version -fdiagnostics-color=always -o C:\\Users\\danie\\AppData\\Local\\Temp\\cc4TEXdY.s]
+        ignore line: [GNU C++20 (GCC) version 13.1.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0-p4  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"]
+        ignore line: [ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"]
+        ignore line: [ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/win/include"]
+        ignore line: [ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../include"]
+        ignore line: [ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "/mingw/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
+        ignore line: [ C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
+        ignore line: [ C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
+        ignore line: [ C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        ignore line: [ C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+        ignore line: [ C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        ignore line: [ C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: e75de627edc3c57e31324b930b15b056]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-std=gnu++20' '-v' '-o' 'CMakeFiles\\cmTC_006b6.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_006b6.dir\\']
+        ignore line: [ as -v -o CMakeFiles\\cmTC_006b6.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\danie\\AppData\\Local\\Temp\\cc4TEXdY.s]
+        ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40]
+        ignore line: [COMPILER_PATH=C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-std=gnu++20' '-v' '-o' 'CMakeFiles\\cmTC_006b6.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_006b6.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_006b6.exe]
+        ignore line: ["C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_006b6.dir\\link.txt --verbose=1]
+        ignore line: ["C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_006b6.dir/objects.a]
+        ignore line: [C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_006b6.dir/objects.a @CMakeFiles\\cmTC_006b6.dir\\objects1.rsp]
+        ignore line: [C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\G__~1.EXE  -v -Wl --whole-archive CMakeFiles\\cmTC_006b6.dir/objects.a -Wl --no-whole-archive -o cmTC_006b6.exe -Wl --out-implib libcmTC_006b6.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\G__~1.EXE]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/Users/danie/AppData/Local/Programs/CLion\\ 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_006b6.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_006b6.']
+        ignore line: [ C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_006b6.exe C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles\\cmTC_006b6.dir/objects.a --no-whole-archive --out-implib libcmTC_006b6.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_006b6.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_006b6.']
+        ignore line: [mingw32-make[1]: Leaving directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xfouif']
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
   -
     kind: "try_compile-v1"
     backtrace:
@@ -195,110 +453,188 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wwicy8"
-      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wwicy8"
+      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mpe50e"
+      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mpe50e"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS: ""
       CMAKE_MODULE_PATH: "D:/C++/openGL/thirdparty/glfw-3.3.2/CMake/modules"
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wwicy8
+        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mpe50e
         
-        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_f56f3\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_f56f3.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_f56f3.dir\\build
-        Building C object CMakeFiles/cmTC_f56f3.dir/src.c.obj
-        	"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_f56f3.dir\\src.c.obj.d --working-dir=D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-wwicy8 --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\danie\\AppData\\Local\\Temp\\nm188B.tmp
-        src.c
-        D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-wwicy8\\src.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory
-        NMAKE : fatal error U1077: '"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_f56f3.dir\\src.c.obj.d --working-dir=D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-wwicy8 --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\danie\\AppData\\Local\\Temp\\nm188B.tmp' : return code '0x2'
-        Stop.
-        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_f56f3.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_f56f3.dir\\build' : return code '0x2'
-        Stop.
+        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_c28b3/fast && C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c28b3.dir\\build.make CMakeFiles/cmTC_c28b3.dir/build
+        mingw32-make[1]: Entering directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mpe50e'
+        Building C object CMakeFiles/cmTC_c28b3.dir/src.c.obj
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD  -fdiagnostics-color=always -o CMakeFiles\\cmTC_c28b3.dir\\src.c.obj -c D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-mpe50e\\src.c
+        Linking C executable cmTC_c28b3.exe
+        "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_c28b3.dir\\link.txt --verbose=1
+        "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_c28b3.dir/objects.a
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_c28b3.dir/objects.a @CMakeFiles\\cmTC_c28b3.dir\\objects1.rsp
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_c28b3.dir/objects.a -Wl,--no-whole-archive -o cmTC_c28b3.exe -Wl,--out-implib,libcmTC_c28b3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_c28b3.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mpe50e'
         
-      exitCode: 2
+      exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
-      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
-      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:175 (_threads_check_lib)"
-      - "thirdparty/glfw-3.3.2/CMakeLists.txt:58 (find_package)"
+      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "thirdparty/glfw-3.3.2/CMakeLists.txt:102 (check_include_file)"
     checks:
-      - "Looking for pthread_create in pthreads"
+      - "Looking for dinput.h"
     directories:
-      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2n9bhl"
-      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2n9bhl"
+      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-36nawr"
+      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-36nawr"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS: ""
       CMAKE_MODULE_PATH: "D:/C++/openGL/thirdparty/glfw-3.3.2/CMake/modules"
     buildResult:
-      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      variable: "DINPUT_H_FOUND"
       cached: true
       stdout: |
-        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2n9bhl
+        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-36nawr
         
-        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_0f377\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_0f377.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_0f377.dir\\build
-        Building C object CMakeFiles/cmTC_0f377.dir/CheckFunctionExists.c.obj
-        	"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_0f377.dir\\CheckFunctionExists.c.obj.d --working-dir=D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-2n9bhl --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\danie\\AppData\\Local\\Temp\\nm1927.tmp
-        CheckFunctionExists.c
-        Linking C executable cmTC_0f377.exe
-        	"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_0f377.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_0f377.dir\\objects1.rsp @C:\\Users\\danie\\AppData\\Local\\Temp\\nm1976.tmp
-        Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_0f377.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_0f377.dir/embed.manifest
-        RC Pass 1:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_0f377.dir/manifest.res CMakeFiles\\cmTC_0f377.dir/manifest.rc
-        LINK Pass 1:
-        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_0f377.dir\\objects1.rsp /out:cmTC_0f377.exe /implib:cmTC_0f377.lib /pdb:D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-2n9bhl\\cmTC_0f377.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_0f377.dir/intermediate.manifest CMakeFiles\\cmTC_0f377.dir/manifest.res
-        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_0f377.dir\\objects1.rsp /out:cmTC_0f377.exe /implib:cmTC_0f377.lib /pdb:D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-2n9bhl\\cmTC_0f377.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_0f377.dir/intermediate.manifest CMakeFiles\\cmTC_0f377.dir/manifest.res" failed (exit code 1104) with the following output:
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib'
-        NMAKE : fatal error U1077: '"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_0f377.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_0f377.dir\\objects1.rsp @C:\\Users\\danie\\AppData\\Local\\Temp\\nm1976.tmp' : return code '0xffffffff'
-        Stop.
-        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_0f377.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_0f377.dir\\build' : return code '0x2'
-        Stop.
+        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_de430/fast && C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_de430.dir\\build.make CMakeFiles/cmTC_de430.dir/build
+        mingw32-make[1]: Entering directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-36nawr'
+        Building C object CMakeFiles/cmTC_de430.dir/CheckIncludeFile.c.obj
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles\\cmTC_de430.dir\\CheckIncludeFile.c.obj -c D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-36nawr\\CheckIncludeFile.c
+        Linking C executable cmTC_de430.exe
+        "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_de430.dir\\link.txt --verbose=1
+        "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_de430.dir/objects.a
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_de430.dir/objects.a @CMakeFiles\\cmTC_de430.dir\\objects1.rsp
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_de430.dir/objects.a -Wl,--no-whole-archive -o cmTC_de430.exe -Wl,--out-implib,libcmTC_de430.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_de430.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-36nawr'
         
-      exitCode: 2
+      exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
-      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
-      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake:176 (_threads_check_lib)"
-      - "thirdparty/glfw-3.3.2/CMakeLists.txt:58 (find_package)"
+      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "thirdparty/glfw-3.3.2/CMakeLists.txt:103 (check_include_file)"
     checks:
-      - "Looking for pthread_create in pthread"
+      - "Looking for xinput.h"
     directories:
-      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t0l8an"
-      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t0l8an"
+      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bu7tkt"
+      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bu7tkt"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS: ""
       CMAKE_MODULE_PATH: "D:/C++/openGL/thirdparty/glfw-3.3.2/CMake/modules"
     buildResult:
-      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      variable: "XINPUT_H_FOUND"
       cached: true
       stdout: |
-        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t0l8an
+        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bu7tkt
         
-        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_c3851\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_c3851.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_c3851.dir\\build
-        Building C object CMakeFiles/cmTC_c3851.dir/CheckFunctionExists.c.obj
-        	"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_c3851.dir\\CheckFunctionExists.c.obj.d --working-dir=D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t0l8an --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\cl.exe @C:\\Users\\danie\\AppData\\Local\\Temp\\nm1A21.tmp
-        CheckFunctionExists.c
-        Linking C executable cmTC_c3851.exe
-        	"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c3851.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_c3851.dir\\objects1.rsp @C:\\Users\\danie\\AppData\\Local\\Temp\\nm1A70.tmp
-        Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_c3851.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_c3851.dir/embed.manifest
-        RC Pass 1:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_c3851.dir/manifest.res CMakeFiles\\cmTC_c3851.dir/manifest.rc
-        LINK Pass 1:
-        C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_c3851.dir\\objects1.rsp /out:cmTC_c3851.exe /implib:cmTC_c3851.lib /pdb:D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t0l8an\\cmTC_c3851.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_c3851.dir/intermediate.manifest CMakeFiles\\cmTC_c3851.dir/manifest.res
-        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_c3851.dir\\objects1.rsp /out:cmTC_c3851.exe /implib:cmTC_c3851.lib /pdb:D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-t0l8an\\cmTC_c3851.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_c3851.dir/intermediate.manifest CMakeFiles\\cmTC_c3851.dir/manifest.res" failed (exit code 1104) with the following output:
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib'
-        NMAKE : fatal error U1077: '"C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c3851.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~2\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1441~1.341\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_c3851.dir\\objects1.rsp @C:\\Users\\danie\\AppData\\Local\\Temp\\nm1A70.tmp' : return code '0xffffffff'
-        Stop.
-        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_c3851.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_c3851.dir\\build' : return code '0x2'
-        Stop.
+        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_0218d/fast && C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_0218d.dir\\build.make CMakeFiles/cmTC_0218d.dir/build
+        mingw32-make[1]: Entering directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bu7tkt'
+        Building C object CMakeFiles/cmTC_0218d.dir/CheckIncludeFile.c.obj
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles\\cmTC_0218d.dir\\CheckIncludeFile.c.obj -c D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-bu7tkt\\CheckIncludeFile.c
+        Linking C executable cmTC_0218d.exe
+        "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_0218d.dir\\link.txt --verbose=1
+        "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_0218d.dir/objects.a
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_0218d.dir/objects.a @CMakeFiles\\cmTC_0218d.dir\\objects1.rsp
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe -Wl,--whole-archive CMakeFiles\\cmTC_0218d.dir/objects.a -Wl,--no-whole-archive -o cmTC_0218d.exe -Wl,--out-implib,libcmTC_0218d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_0218d.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bu7tkt'
         
-      exitCode: 2
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "thirdparty/glfw-3.3.2/CMakeLists.txt:113 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test _GLFW_HAS_DEP"
+    directories:
+      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-l9nv5p"
+      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-l9nv5p"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/C++/openGL/thirdparty/glfw-3.3.2/CMake/modules"
+    buildResult:
+      variable: "_GLFW_HAS_DEP"
+      cached: true
+      stdout: |
+        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-l9nv5p
+        
+        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_bf727/fast && C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_bf727.dir\\build.make CMakeFiles/cmTC_bf727.dir/build
+        mingw32-make[1]: Entering directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-l9nv5p'
+        Building C object CMakeFiles/cmTC_bf727.dir/src.c.obj
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe -D_GLFW_HAS_DEP  -Wl,--nxcompat -fdiagnostics-color=always -o CMakeFiles\\cmTC_bf727.dir\\src.c.obj -c D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-l9nv5p\\src.c
+        Linking C executable cmTC_bf727.exe
+        "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_bf727.dir\\link.txt --verbose=1
+        "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_bf727.dir/objects.a
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_bf727.dir/objects.a @CMakeFiles\\cmTC_bf727.dir\\objects1.rsp
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe  -Wl,--nxcompat -Wl,--whole-archive CMakeFiles\\cmTC_bf727.dir/objects.a -Wl,--no-whole-archive -o cmTC_bf727.exe -Wl,--out-implib,libcmTC_bf727.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_bf727.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-l9nv5p'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "thirdparty/glfw-3.3.2/CMakeLists.txt:120 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test _GLFW_HAS_ASLR"
+    directories:
+      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-oxi5uy"
+      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-oxi5uy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/C++/openGL/thirdparty/glfw-3.3.2/CMake/modules"
+    buildResult:
+      variable: "_GLFW_HAS_ASLR"
+      cached: true
+      stdout: |
+        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-oxi5uy
+        
+        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_f2ac9/fast && C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f2ac9.dir\\build.make CMakeFiles/cmTC_f2ac9.dir/build
+        mingw32-make[1]: Entering directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-oxi5uy'
+        Building C object CMakeFiles/cmTC_f2ac9.dir/src.c.obj
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe -D_GLFW_HAS_ASLR  -Wl,--dynamicbase -fdiagnostics-color=always -o CMakeFiles\\cmTC_f2ac9.dir\\src.c.obj -c D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-oxi5uy\\src.c
+        Linking C executable cmTC_f2ac9.exe
+        "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_f2ac9.dir\\link.txt --verbose=1
+        "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_f2ac9.dir/objects.a
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_f2ac9.dir/objects.a @CMakeFiles\\cmTC_f2ac9.dir\\objects1.rsp
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe  -Wl,--dynamicbase -Wl,--whole-archive CMakeFiles\\cmTC_f2ac9.dir/objects.a -Wl,--no-whole-archive -o cmTC_f2ac9.exe -Wl,--out-implib,libcmTC_f2ac9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_f2ac9.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-oxi5uy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "thirdparty/glfw-3.3.2/CMakeLists.txt:127 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test _GLFW_HAS_64ASLR"
+    directories:
+      source: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8ype4o"
+      binary: "D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8ype4o"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "D:/C++/openGL/thirdparty/glfw-3.3.2/CMake/modules"
+    buildResult:
+      variable: "_GLFW_HAS_64ASLR"
+      cached: true
+      stdout: |
+        Change Dir: D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8ype4o
+        
+        Run Build Command(s):C:/Users/danie/AppData/Local/Programs/CLion 2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_77b60/fast && C:/Users/danie/AppData/Local/Programs/CLION2~1/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_77b60.dir\\build.make CMakeFiles/cmTC_77b60.dir/build
+        mingw32-make[1]: Entering directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8ype4o'
+        Building C object CMakeFiles/cmTC_77b60.dir/src.c.obj
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe -D_GLFW_HAS_64ASLR  -Wl,--high-entropy-va -fdiagnostics-color=always -o CMakeFiles\\cmTC_77b60.dir\\src.c.obj -c D:\\C++\\openGL\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-8ype4o\\src.c
+        Linking C executable cmTC_77b60.exe
+        "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_77b60.dir\\link.txt --verbose=1
+        "C:\\Users\\danie\\AppData\\Local\\Programs\\CLion 2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_77b60.dir/objects.a
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\ar.exe qc CMakeFiles\\cmTC_77b60.dir/objects.a @CMakeFiles\\cmTC_77b60.dir\\objects1.rsp
+        C:\\Users\\danie\\AppData\\Local\\Programs\\CLION2~1\\bin\\mingw\\bin\\gcc.exe  -Wl,--high-entropy-va -Wl,--whole-archive CMakeFiles\\cmTC_77b60.dir/objects.a -Wl,--no-whole-archive -o cmTC_77b60.exe -Wl,--out-implib,libcmTC_77b60.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_77b60.dir\\linkLibs.rsp
+        mingw32-make[1]: Leaving directory 'D:/C++/openGL/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8ype4o'
+        
+      exitCode: 0
 ...

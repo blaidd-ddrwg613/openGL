@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/C++/openGL/thirdparty/stb_truetype/src/stb_truetype.cpp" "thirdparty/stb_truetype/CMakeFiles/stb_truetype.dir/src/stb_truetype.cpp.obj" "msvc" "thirdparty/stb_truetype/CMakeFiles/stb_truetype.dir/src/stb_truetype.cpp.obj.d"
+  "D:/C++/openGL/thirdparty/stb_truetype/src/stb_truetype.cpp" "thirdparty/stb_truetype/CMakeFiles/stb_truetype.dir/src/stb_truetype.cpp.obj" "gcc" "thirdparty/stb_truetype/CMakeFiles/stb_truetype.dir/src/stb_truetype.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

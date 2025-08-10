@@ -1,0 +1,2 @@
+C:\Users\danie\AppData\Local\Programs\CLION2~1\bin\mingw\bin\ar.exe qc libstb_truetype.a CMakeFiles/stb_truetype.dir/src/stb_truetype.cpp.obj
+C:\Users\danie\AppData\Local\Programs\CLION2~1\bin\mingw\bin\ranlib.exe libstb_truetype.a

@@ -1,11 +1,13 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/mygame.dir/src/Shader.cpp.obj"
+  "CMakeFiles/mygame.dir/src/Shader.cpp.obj.d"
   "CMakeFiles/mygame.dir/src/main.cpp.obj"
   "CMakeFiles/mygame.dir/src/main.cpp.obj.d"
   "CMakeFiles/mygame.dir/src/openglErrorReporting.cpp.obj"
   "CMakeFiles/mygame.dir/src/openglErrorReporting.cpp.obj.d"
+  "libmygame.dll.a"
   "mygame.exe"
   "mygame.exe.manifest"
-  "mygame.lib"
   "mygame.pdb"
 )
 

@@ -1,0 +1,2 @@
+C:\Users\danie\AppData\Local\Programs\CLION2~1\bin\mingw\bin\ar.exe qc libstb_image.a CMakeFiles/stb_image.dir/src/stb_image.cpp.obj
+C:\Users\danie\AppData\Local\Programs\CLION2~1\bin\mingw\bin\ranlib.exe libstb_image.a

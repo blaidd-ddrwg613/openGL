@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "stb_truetype.lib"
+  "libstb_truetype.a"
 )
