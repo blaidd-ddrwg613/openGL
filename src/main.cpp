@@ -1,5 +1,8 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include "glm/glm.hpp"
+#include "glm/gtc/matrix_transform.hpp"
+#include <glm/gtc/type_ptr.hpp>
 #include <openglErrorReporting.h>
 
 #include <iostream>
@@ -111,6 +114,14 @@ int main()
     // or set it via the texture class
     defaultShader.setInt("texture2", 1);
 
+    // print each row and col of the matrix
+//    for (int i = 0; i < 4; i++) {
+//        for (int j = 0; j < 4; j++) {
+//            std::cout << trans[i][j] << " ";
+//        }
+//        std::cout << std::endl;
+//    }
+
     // Application Loop
     while (!glfwWindowShouldClose(window))
     {
@@ -130,11 +141,37 @@ int main()
 
         defaultShader.use();
         defaultShader.setFloat("mixValue", mixValue);
-        defaultShader.setFloat("offset", sin(glfwGetTime()));
+//        defaultShader.setFloat("offset", sin(glfwGetTime()));
+
+        // Identity matrix
+        glm::mat4 trans = glm::mat4(1.0f);
+        // Move the rectangle to the bottom right
+        trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
+        // Rotate the rectangle over time  along the z axis
+        trans = glm::rotate(trans,(float)glfwGetTime(),glm::vec3(0.0f,0.0f,1.0f));
+        // Scale the rectangle in half
+        trans = glm::scale(trans, glm::vec3(0.5f, 0.5f, 0.5f));
+
+        unsigned int transformLoc = glGetUniformLocation(defaultShader.ID, "transform");
+        // (1. uniform Loctaion) (2. # of Matricies we want to send) (3. transpose the matrix (no need with GLM)
+        // (4. Matrix Data (GLM stores their matrices' data in a way that doesn't always match OpenGL's expectations,
+        // so we first convert the data with GLM's built-in function value_ptr.)
+        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
 
         // Render Triangle
         glBindVertexArray(VAO);
 //        glDrawArrays(GL_TRIANGLES, 0, 3);
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+
+        // second transformation
+        // ---------------------
+        trans = glm::mat4(1.0f); // reset it to identity matrix
+        trans = glm::translate(trans, glm::vec3(-0.5f, 0.5f, 0.0f));
+        float scaleAmount = static_cast<float>(sin(glfwGetTime()));
+        trans = glm::scale(trans, glm::vec3(scaleAmount, scaleAmount, scaleAmount));
+        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, &trans[0][0]); // this time take the matrix value array's first element as its memory pointer value
+
+        // now with the uniform matrix being replaced with new transformations, draw it again.
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
         // Check and Call events and swap the buffers
