@@ -22,9 +22,9 @@ int main()
     Texture texture1(RESOURCES_PATH"textures/container.jpg", false);
     Texture texture2(RESOURCES_PATH"textures/awesomeface.png", true);
 
-    // Triangle vertices
+    // Rectangle vertices
     float vertices[] = {
-            // positions          // colors           // texture coords
+            // positions          // Color           // texture coords
             0.5f,  0.5f, 0.0f,    1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // top right
             0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,1.0f, 0.0f,   // bottom right
             -0.5f, -0.5f, 0.0f,0.0f, 0.0f, 1.0f,0.0f, 0.0f,   // bottom left
@@ -35,6 +35,19 @@ int main()
             0, 1, 3, // first triangle
             1, 2, 3  // second triangle
     };
+
+    float t_vertices[] =
+            {
+            // position                     // Color
+            0.0f, 1.0f, 0.0f,0.6f, 0.1f, 0.5f, // Top
+            -0.5f, 0.0f, 0.0f, 0.6f, 0.1f, 0.5f, // Left
+            0.5f, 0.0f, 0.0f, 0.6f, 0.1f, 0.5f, // Right
+            };
+
+    unsigned int t_indicies[] =
+            {
+            0, 1, 2
+            };
 
     // Generates Vertex Array Object and binds it
     VAO VAO1;
@@ -53,6 +66,20 @@ int main()
     VAO1.Unbind();
     VBO1.Unbind();
     EBO1.Unbind();
+
+    // Triangle
+    VAO VAO2;
+    VAO2.Bind();
+
+    VBO VBO2(t_vertices, sizeof(t_vertices));
+    EBO EBO2(t_indicies, sizeof(t_indicies));
+
+    VAO2.LinkAttrib(VBO2, 0, 3, GL_FLOAT, 6 * sizeof(float), (void*)0);
+    VAO2.LinkAttrib(VBO2, 1, 3, GL_FLOAT, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+
+    VAO2.Unbind();
+    VBO2.Unbind();
+    EBO2.Unbind();
 
     // tell opengl for each sampler to which texture unit it belongs to (only has to be done once)
     // -------------------------------------------------------------------------------------------
@@ -113,10 +140,10 @@ int main()
         // now with the uniform matrix being replaced with new transformations, draw it again.
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
+        // Don't forget to reset the matrix if you don't want it in relation to the previous space.
         trans = glm::mat4(1.0f);
-        trans = glm::translate(trans, glm::vec3(0.5f, 0.5f, 0.0f));
         glUniformMatrix4fv(transformLoc, 1, GL_FALSE, &trans[0][0]);
-
+        VAO2.Bind();
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
         // Check and Call events and swap the buffers
