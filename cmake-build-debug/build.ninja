@@ -56,8 +56,14 @@ build CMakeFiles/mygame.dir/src/Shader.cpp.obj: CXX_COMPILER__mygame_unscanned_D
   INCLUDES = -IC:/Code/openGL/include -IC:/Code/openGL/thirdparty/glm/include -IC:/Code/openGL/thirdparty/glm -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include -IC:/Code/openGL/thirdparty/stb_image/include -IC:/Code/openGL/thirdparty/stb_truetype/include -IC:/Code/openGL/thirdparty/raudio/include -IC:/Code/openGL/thirdparty/imgui-docking/imgui
   OBJECT_DIR = CMakeFiles\mygame.dir
   OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\mygame.dir\
-  TARGET_PDB = mygame.pdb
+
+build CMakeFiles/mygame.dir/src/Texture.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug C$:/Code/openGL/src/Texture.cpp || cmake_object_order_depends_target_mygame
+  DEFINES = -DGLFW_INCLUDE_NONE=1 -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\"C:/Code/openGL/resources/\"
+  DEP_FILE = CMakeFiles\mygame.dir\src\Texture.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Code/openGL/include -IC:/Code/openGL/thirdparty/glm/include -IC:/Code/openGL/thirdparty/glm -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include -IC:/Code/openGL/thirdparty/stb_image/include -IC:/Code/openGL/thirdparty/stb_truetype/include -IC:/Code/openGL/thirdparty/raudio/include -IC:/Code/openGL/thirdparty/imgui-docking/imgui
+  OBJECT_DIR = CMakeFiles\mygame.dir
+  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src
 
 build CMakeFiles/mygame.dir/src/main.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug C$:/Code/openGL/src/main.cpp || cmake_object_order_depends_target_mygame
   DEFINES = -DGLFW_INCLUDE_NONE=1 -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\"C:/Code/openGL/resources/\"
@@ -66,8 +72,6 @@ build CMakeFiles/mygame.dir/src/main.cpp.obj: CXX_COMPILER__mygame_unscanned_Deb
   INCLUDES = -IC:/Code/openGL/include -IC:/Code/openGL/thirdparty/glm/include -IC:/Code/openGL/thirdparty/glm -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include -IC:/Code/openGL/thirdparty/stb_image/include -IC:/Code/openGL/thirdparty/stb_truetype/include -IC:/Code/openGL/thirdparty/raudio/include -IC:/Code/openGL/thirdparty/imgui-docking/imgui
   OBJECT_DIR = CMakeFiles\mygame.dir
   OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\mygame.dir\
-  TARGET_PDB = mygame.pdb
 
 build CMakeFiles/mygame.dir/src/openglErrorReporting.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug C$:/Code/openGL/src/openglErrorReporting.cpp || cmake_object_order_depends_target_mygame
   DEFINES = -DGLFW_INCLUDE_NONE=1 -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\"C:/Code/openGL/resources/\"
@@ -76,8 +80,6 @@ build CMakeFiles/mygame.dir/src/openglErrorReporting.cpp.obj: CXX_COMPILER__myga
   INCLUDES = -IC:/Code/openGL/include -IC:/Code/openGL/thirdparty/glm/include -IC:/Code/openGL/thirdparty/glm -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include -IC:/Code/openGL/thirdparty/stb_image/include -IC:/Code/openGL/thirdparty/stb_truetype/include -IC:/Code/openGL/thirdparty/raudio/include -IC:/Code/openGL/thirdparty/imgui-docking/imgui
   OBJECT_DIR = CMakeFiles\mygame.dir
   OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\mygame.dir\
-  TARGET_PDB = mygame.pdb
 
 
 # =============================================================================
@@ -87,16 +89,15 @@ build CMakeFiles/mygame.dir/src/openglErrorReporting.cpp.obj: CXX_COMPILER__myga
 #############################################
 # Link the executable mygame.exe
 
-build mygame.exe: CXX_EXECUTABLE_LINKER__mygame_Debug CMakeFiles/mygame.dir/src/Shader.cpp.obj CMakeFiles/mygame.dir/src/main.cpp.obj CMakeFiles/mygame.dir/src/openglErrorReporting.cpp.obj | thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/glad/libglad.a thirdparty/stb_image/libstb_image.a thirdparty/stb_truetype/libstb_truetype.a thirdparty/raudio/libraudio.a thirdparty/imgui-docking/libimgui.a thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/glad/libglad.a || thirdparty/glad/libglad.a thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/imgui-docking/libimgui.a thirdparty/raudio/libraudio.a thirdparty/stb_image/libstb_image.a thirdparty/stb_truetype/libstb_truetype.a
+build mygame.exe: CXX_EXECUTABLE_LINKER__mygame_Debug CMakeFiles/mygame.dir/src/Shader.cpp.obj CMakeFiles/mygame.dir/src/Texture.cpp.obj CMakeFiles/mygame.dir/src/main.cpp.obj CMakeFiles/mygame.dir/src/openglErrorReporting.cpp.obj | thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/glad/libglad.a thirdparty/stb_image/libstb_image.a thirdparty/stb_truetype/libstb_truetype.a thirdparty/raudio/libraudio.a thirdparty/imgui-docking/libimgui.a thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/glad/libglad.a || thirdparty/glad/libglad.a thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/imgui-docking/libimgui.a thirdparty/raudio/libraudio.a thirdparty/stb_image/libstb_image.a thirdparty/stb_truetype/libstb_truetype.a
   FLAGS = -g
   LINK_LIBRARIES = thirdparty/glfw-3.3.2/src/libglfw3.a  thirdparty/glad/libglad.a  thirdparty/stb_image/libstb_image.a  thirdparty/stb_truetype/libstb_truetype.a  thirdparty/raudio/libraudio.a  thirdparty/imgui-docking/libimgui.a  thirdparty/glfw-3.3.2/src/libglfw3.a  thirdparty/glad/libglad.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\mygame.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\mygame.dir\
   TARGET_FILE = mygame.exe
   TARGET_IMPLIB = libmygame.dll.a
-  TARGET_PDB = mygame.pdb
+  TARGET_PDB = mygame.exe.dbg
 
 
 #############################################
@@ -170,8 +171,6 @@ build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/context.c.obj: C_COMPILER__g
   INCLUDES = -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glfw-3.3.2/src -IC:/Code/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = thirdparty\glfw-3.3.2\src\libglfw3.pdb
 
 build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Code/openGL/thirdparty/glfw-3.3.2/src/init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -180,8 +179,6 @@ build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/init.c.obj: C_COMPILER__glfw
   INCLUDES = -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glfw-3.3.2/src -IC:/Code/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = thirdparty\glfw-3.3.2\src\libglfw3.pdb
 
 build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/input.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Code/openGL/thirdparty/glfw-3.3.2/src/input.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -190,8 +187,6 @@ build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/input.c.obj: C_COMPILER__glf
   INCLUDES = -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glfw-3.3.2/src -IC:/Code/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = thirdparty\glfw-3.3.2\src\libglfw3.pdb
 
 build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Code/openGL/thirdparty/glfw-3.3.2/src/monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -200,8 +195,6 @@ build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/monitor.c.obj: C_COMPILER__g
   INCLUDES = -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glfw-3.3.2/src -IC:/Code/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = thirdparty\glfw-3.3.2\src\libglfw3.pdb
 
 build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Code/openGL/thirdparty/glfw-3.3.2/src/vulkan.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -210,8 +203,6 @@ build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/vulkan.c.obj: C_COMPILER__gl
   INCLUDES = -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glfw-3.3.2/src -IC:/Code/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = thirdparty\glfw-3.3.2\src\libglfw3.pdb
 
 build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Code/openGL/thirdparty/glfw-3.3.2/src/window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -220,8 +211,6 @@ build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/window.c.obj: C_COMPILER__gl
   INCLUDES = -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glfw-3.3.2/src -IC:/Code/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = thirdparty\glfw-3.3.2\src\libglfw3.pdb
 
 build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Code/openGL/thirdparty/glfw-3.3.2/src/win32_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -230,8 +219,6 @@ build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_init.c.obj: C_COMPILER
   INCLUDES = -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glfw-3.3.2/src -IC:/Code/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = thirdparty\glfw-3.3.2\src\libglfw3.pdb
 
 build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Code/openGL/thirdparty/glfw-3.3.2/src/win32_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -240,8 +227,6 @@ build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: C_COMP
   INCLUDES = -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glfw-3.3.2/src -IC:/Code/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = thirdparty\glfw-3.3.2\src\libglfw3.pdb
 
 build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Code/openGL/thirdparty/glfw-3.3.2/src/win32_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -250,8 +235,6 @@ build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: C_COMPI
   INCLUDES = -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glfw-3.3.2/src -IC:/Code/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = thirdparty\glfw-3.3.2\src\libglfw3.pdb
 
 build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Code/openGL/thirdparty/glfw-3.3.2/src/win32_time.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -260,8 +243,6 @@ build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_time.c.obj: C_COMPILER
   INCLUDES = -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glfw-3.3.2/src -IC:/Code/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = thirdparty\glfw-3.3.2\src\libglfw3.pdb
 
 build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Code/openGL/thirdparty/glfw-3.3.2/src/win32_thread.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -270,8 +251,6 @@ build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_thread.c.obj: C_COMPIL
   INCLUDES = -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glfw-3.3.2/src -IC:/Code/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = thirdparty\glfw-3.3.2\src\libglfw3.pdb
 
 build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Code/openGL/thirdparty/glfw-3.3.2/src/win32_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -280,8 +259,6 @@ build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/win32_window.c.obj: C_COMPIL
   INCLUDES = -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glfw-3.3.2/src -IC:/Code/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = thirdparty\glfw-3.3.2\src\libglfw3.pdb
 
 build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Code/openGL/thirdparty/glfw-3.3.2/src/wgl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -290,8 +267,6 @@ build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/wgl_context.c.obj: C_COMPILE
   INCLUDES = -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glfw-3.3.2/src -IC:/Code/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = thirdparty\glfw-3.3.2\src\libglfw3.pdb
 
 build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Code/openGL/thirdparty/glfw-3.3.2/src/egl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -300,8 +275,6 @@ build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/egl_context.c.obj: C_COMPILE
   INCLUDES = -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glfw-3.3.2/src -IC:/Code/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = thirdparty\glfw-3.3.2\src\libglfw3.pdb
 
 build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug C$:/Code/openGL/thirdparty/glfw-3.3.2/src/osmesa_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE
@@ -310,8 +283,6 @@ build thirdparty/glfw-3.3.2/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: C_COMP
   INCLUDES = -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glfw-3.3.2/src -IC:/Code/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/src
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = thirdparty\glfw-3.3.2\src\libglfw3.pdb
 
 
 # =============================================================================
@@ -326,9 +297,8 @@ build thirdparty/glfw-3.3.2/src/libglfw3.a: C_STATIC_LIBRARY_LINKER__glfw_Debug 
   OBJECT_DIR = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = thirdparty\glfw-3.3.2\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_FILE = thirdparty\glfw-3.3.2\src\libglfw3.a
-  TARGET_PDB = thirdparty\glfw-3.3.2\src\libglfw3.pdb
+  TARGET_PDB = glfw3.a.dbg
 
 
 #############################################
@@ -373,8 +343,6 @@ build thirdparty/glad/CMakeFiles/glad.dir/src/glad.c.obj: C_COMPILER__glad_unsca
   INCLUDES = -IC:/Code/openGL/thirdparty/glad/include
   OBJECT_DIR = thirdparty\glad\CMakeFiles\glad.dir
   OBJECT_FILE_DIR = thirdparty\glad\CMakeFiles\glad.dir\src
-  TARGET_COMPILE_PDB = thirdparty\glad\CMakeFiles\glad.dir\glad.pdb
-  TARGET_PDB = thirdparty\glad\libglad.pdb
 
 
 # =============================================================================
@@ -389,9 +357,8 @@ build thirdparty/glad/libglad.a: C_STATIC_LIBRARY_LINKER__glad_Debug thirdparty/
   OBJECT_DIR = thirdparty\glad\CMakeFiles\glad.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = thirdparty\glad\CMakeFiles\glad.dir\glad.pdb
   TARGET_FILE = thirdparty\glad\libglad.a
-  TARGET_PDB = thirdparty\glad\libglad.pdb
+  TARGET_PDB = glad.a.dbg
 
 
 #############################################
@@ -436,8 +403,6 @@ build thirdparty/stb_image/CMakeFiles/stb_image.dir/src/stb_image.cpp.obj: CXX_C
   INCLUDES = -IC:/Code/openGL/thirdparty/stb_image/include
   OBJECT_DIR = thirdparty\stb_image\CMakeFiles\stb_image.dir
   OBJECT_FILE_DIR = thirdparty\stb_image\CMakeFiles\stb_image.dir\src
-  TARGET_COMPILE_PDB = thirdparty\stb_image\CMakeFiles\stb_image.dir\stb_image.pdb
-  TARGET_PDB = thirdparty\stb_image\libstb_image.pdb
 
 
 # =============================================================================
@@ -452,9 +417,8 @@ build thirdparty/stb_image/libstb_image.a: CXX_STATIC_LIBRARY_LINKER__stb_image_
   OBJECT_DIR = thirdparty\stb_image\CMakeFiles\stb_image.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = thirdparty\stb_image\CMakeFiles\stb_image.dir\stb_image.pdb
   TARGET_FILE = thirdparty\stb_image\libstb_image.a
-  TARGET_PDB = thirdparty\stb_image\libstb_image.pdb
+  TARGET_PDB = stb_image.a.dbg
 
 
 #############################################
@@ -499,8 +463,6 @@ build thirdparty/stb_truetype/CMakeFiles/stb_truetype.dir/src/stb_truetype.cpp.o
   INCLUDES = -IC:/Code/openGL/thirdparty/stb_truetype/include
   OBJECT_DIR = thirdparty\stb_truetype\CMakeFiles\stb_truetype.dir
   OBJECT_FILE_DIR = thirdparty\stb_truetype\CMakeFiles\stb_truetype.dir\src
-  TARGET_COMPILE_PDB = thirdparty\stb_truetype\CMakeFiles\stb_truetype.dir\stb_truetype.pdb
-  TARGET_PDB = thirdparty\stb_truetype\libstb_truetype.pdb
 
 
 # =============================================================================
@@ -515,9 +477,8 @@ build thirdparty/stb_truetype/libstb_truetype.a: CXX_STATIC_LIBRARY_LINKER__stb_
   OBJECT_DIR = thirdparty\stb_truetype\CMakeFiles\stb_truetype.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = thirdparty\stb_truetype\CMakeFiles\stb_truetype.dir\stb_truetype.pdb
   TARGET_FILE = thirdparty\stb_truetype\libstb_truetype.a
-  TARGET_PDB = thirdparty\stb_truetype\libstb_truetype.pdb
+  TARGET_PDB = stb_truetype.a.dbg
 
 
 #############################################
@@ -562,8 +523,6 @@ build thirdparty/raudio/CMakeFiles/raudio.dir/src/raudio.c.obj: C_COMPILER__raud
   INCLUDES = -IC:/Code/openGL/thirdparty/raudio/include
   OBJECT_DIR = thirdparty\raudio\CMakeFiles\raudio.dir
   OBJECT_FILE_DIR = thirdparty\raudio\CMakeFiles\raudio.dir\src
-  TARGET_COMPILE_PDB = thirdparty\raudio\CMakeFiles\raudio.dir\raudio.pdb
-  TARGET_PDB = thirdparty\raudio\libraudio.pdb
 
 
 # =============================================================================
@@ -578,9 +537,8 @@ build thirdparty/raudio/libraudio.a: C_STATIC_LIBRARY_LINKER__raudio_Debug third
   OBJECT_DIR = thirdparty\raudio\CMakeFiles\raudio.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = thirdparty\raudio\CMakeFiles\raudio.dir\raudio.pdb
   TARGET_FILE = thirdparty\raudio\libraudio.a
-  TARGET_PDB = thirdparty\raudio\libraudio.pdb
+  TARGET_PDB = raudio.a.dbg
 
 
 #############################################
@@ -653,8 +611,6 @@ build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui.cpp.obj: CXX_COM
   INCLUDES = -IC:/Code/openGL/thirdparty/imgui-docking/imgui -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include
   OBJECT_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui
-  TARGET_COMPILE_PDB = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui.pdb
-  TARGET_PDB = thirdparty\imgui-docking\libimgui.pdb
 
 build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:/Code/openGL/thirdparty/imgui-docking/imgui/imgui_demo.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_demo.cpp.obj.d
@@ -662,8 +618,6 @@ build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.obj: CX
   INCLUDES = -IC:/Code/openGL/thirdparty/imgui-docking/imgui -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include
   OBJECT_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui
-  TARGET_COMPILE_PDB = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui.pdb
-  TARGET_PDB = thirdparty\imgui-docking\libimgui.pdb
 
 build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:/Code/openGL/thirdparty/imgui-docking/imgui/imgui_draw.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_draw.cpp.obj.d
@@ -671,8 +625,6 @@ build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.obj: CX
   INCLUDES = -IC:/Code/openGL/thirdparty/imgui-docking/imgui -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include
   OBJECT_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui
-  TARGET_COMPILE_PDB = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui.pdb
-  TARGET_PDB = thirdparty\imgui-docking\libimgui.pdb
 
 build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:/Code/openGL/thirdparty/imgui-docking/imgui/imgui_tables.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_tables.cpp.obj.d
@@ -680,8 +632,6 @@ build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui_tables.cpp.obj: 
   INCLUDES = -IC:/Code/openGL/thirdparty/imgui-docking/imgui -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include
   OBJECT_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui
-  TARGET_COMPILE_PDB = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui.pdb
-  TARGET_PDB = thirdparty\imgui-docking\libimgui.pdb
 
 build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:/Code/openGL/thirdparty/imgui-docking/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui\imgui_widgets.cpp.obj.d
@@ -689,8 +639,6 @@ build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.obj:
   INCLUDES = -IC:/Code/openGL/thirdparty/imgui-docking/imgui -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include
   OBJECT_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui
-  TARGET_COMPILE_PDB = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui.pdb
-  TARGET_PDB = thirdparty\imgui-docking\libimgui.pdb
 
 build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_glfw.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:/Code/openGL/thirdparty/imgui-docking/imgui/backends/imgui_impl_glfw.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui\backends\imgui_impl_glfw.cpp.obj.d
@@ -698,8 +646,6 @@ build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_gl
   INCLUDES = -IC:/Code/openGL/thirdparty/imgui-docking/imgui -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include
   OBJECT_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui\backends
-  TARGET_COMPILE_PDB = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui.pdb
-  TARGET_PDB = thirdparty\imgui-docking\libimgui.pdb
 
 build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_opengl3.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug C$:/Code/openGL/thirdparty/imgui-docking/imgui/backends/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui\backends\imgui_impl_opengl3.cpp.obj.d
@@ -707,8 +653,6 @@ build thirdparty/imgui-docking/CMakeFiles/imgui.dir/imgui/backends/imgui_impl_op
   INCLUDES = -IC:/Code/openGL/thirdparty/imgui-docking/imgui -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include
   OBJECT_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui\backends
-  TARGET_COMPILE_PDB = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui.pdb
-  TARGET_PDB = thirdparty\imgui-docking\libimgui.pdb
 
 
 # =============================================================================
@@ -723,9 +667,8 @@ build thirdparty/imgui-docking/libimgui.a: CXX_STATIC_LIBRARY_LINKER__imgui_Debu
   OBJECT_DIR = thirdparty\imgui-docking\CMakeFiles\imgui.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = thirdparty\imgui-docking\CMakeFiles\imgui.dir\imgui.pdb
   TARGET_FILE = thirdparty\imgui-docking\libimgui.a
-  TARGET_PDB = thirdparty\imgui-docking\libimgui.pdb
+  TARGET_PDB = imgui.a.dbg
 
 
 #############################################
@@ -866,14 +809,14 @@ build C$:/Code/openGL/cmake-build-debug/CMakeFiles/cmake.verify_globs: VERIFY_GL
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE C$:/Code/openGL/cmake-build-debug/CMakeFiles/cmake.verify_globs | C$:/Code/openGL/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake C$:/Code/openGL/CMakeLists.txt C$:/Code/openGL/thirdparty/glad/CMakeLists.txt C$:/Code/openGL/thirdparty/glfw-3.3.2/CMakeLists.txt C$:/Code/openGL/thirdparty/glfw-3.3.2/src/CMakeLists.txt C$:/Code/openGL/thirdparty/glfw-3.3.2/src/glfw3.pc.in C$:/Code/openGL/thirdparty/glfw-3.3.2/src/glfw3Config.cmake.in C$:/Code/openGL/thirdparty/glfw-3.3.2/src/glfw_config.h.in C$:/Code/openGL/thirdparty/glm/CMakeLists.txt C$:/Code/openGL/thirdparty/imgui-docking/CMakeLists.txt C$:/Code/openGL/thirdparty/raudio/CMakeLists.txt C$:/Code/openGL/thirdparty/stb_image/CMakeLists.txt C$:/Code/openGL/thirdparty/stb_truetype/CMakeLists.txt C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineRCCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCCompiler.cmake.in C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestRCCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-Determine-CXX.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE C$:/Code/openGL/cmake-build-debug/CMakeFiles/cmake.verify_globs | C$:/Code/openGL/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake C$:/Code/openGL/CMakeLists.txt C$:/Code/openGL/thirdparty/glad/CMakeLists.txt C$:/Code/openGL/thirdparty/glfw-3.3.2/CMakeLists.txt C$:/Code/openGL/thirdparty/glfw-3.3.2/src/CMakeLists.txt C$:/Code/openGL/thirdparty/glfw-3.3.2/src/glfw3.pc.in C$:/Code/openGL/thirdparty/glfw-3.3.2/src/glfw3Config.cmake.in C$:/Code/openGL/thirdparty/glfw-3.3.2/src/glfw_config.h.in C$:/Code/openGL/thirdparty/glm/CMakeLists.txt C$:/Code/openGL/thirdparty/imgui-docking/CMakeLists.txt C$:/Code/openGL/thirdparty/raudio/CMakeLists.txt C$:/Code/openGL/thirdparty/stb_image/CMakeLists.txt C$:/Code/openGL/thirdparty/stb_truetype/CMakeLists.txt C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Code/openGL/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake C$:/Code/openGL/CMakeLists.txt C$:/Code/openGL/thirdparty/glad/CMakeLists.txt C$:/Code/openGL/thirdparty/glfw-3.3.2/CMakeLists.txt C$:/Code/openGL/thirdparty/glfw-3.3.2/src/CMakeLists.txt C$:/Code/openGL/thirdparty/glfw-3.3.2/src/glfw3.pc.in C$:/Code/openGL/thirdparty/glfw-3.3.2/src/glfw3Config.cmake.in C$:/Code/openGL/thirdparty/glfw-3.3.2/src/glfw_config.h.in C$:/Code/openGL/thirdparty/glm/CMakeLists.txt C$:/Code/openGL/thirdparty/imgui-docking/CMakeLists.txt C$:/Code/openGL/thirdparty/raudio/CMakeLists.txt C$:/Code/openGL/thirdparty/stb_image/CMakeLists.txt C$:/Code/openGL/thirdparty/stb_truetype/CMakeLists.txt C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineRCCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCCompiler.cmake.in C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestRCCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-Determine-CXX.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
+build C$:/Code/openGL/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake C$:/Code/openGL/CMakeLists.txt C$:/Code/openGL/thirdparty/glad/CMakeLists.txt C$:/Code/openGL/thirdparty/glfw-3.3.2/CMakeLists.txt C$:/Code/openGL/thirdparty/glfw-3.3.2/src/CMakeLists.txt C$:/Code/openGL/thirdparty/glfw-3.3.2/src/glfw3.pc.in C$:/Code/openGL/thirdparty/glfw-3.3.2/src/glfw3Config.cmake.in C$:/Code/openGL/thirdparty/glfw-3.3.2/src/glfw_config.h.in C$:/Code/openGL/thirdparty/glm/CMakeLists.txt C$:/Code/openGL/thirdparty/imgui-docking/CMakeLists.txt C$:/Code/openGL/thirdparty/raudio/CMakeLists.txt C$:/Code/openGL/thirdparty/stb_image/CMakeLists.txt C$:/Code/openGL/thirdparty/stb_truetype/CMakeLists.txt C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDependentOption.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakePackageConfigHelpers.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCCompilerFlag.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckIncludeFile.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckLibraryExists.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/FindThreads.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/GNUInstallDirs.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Users/danie/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.26/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
 
 
 #############################################
