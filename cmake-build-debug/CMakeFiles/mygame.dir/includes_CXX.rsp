@@ -1,1 +1,0 @@
--ID:/C++/openGL/include -ID:/C++/openGL/thirdparty/glm/include -ID:/C++/openGL/thirdparty/glm -I"D:/C++/openGL/thirdparty/glfw-3.3.2/include" -ID:/C++/openGL/thirdparty/glad/include -ID:/C++/openGL/thirdparty/stb_image/include -ID:/C++/openGL/thirdparty/stb_truetype/include -ID:/C++/openGL/thirdparty/raudio/include -I"D:/C++/openGL/thirdparty/imgui-docking/imgui"

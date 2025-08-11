@@ -1,1 +1,0 @@
- "thirdparty/glfw-3.3.2/src/libglfw3.a" thirdparty/glad/libglad.a thirdparty/stb_image/libstb_image.a thirdparty/stb_truetype/libstb_truetype.a thirdparty/raudio/libraudio.a "thirdparty/imgui-docking/libimgui.a" "thirdparty/glfw-3.3.2/src/libglfw3.a" thirdparty/glad/libglad.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

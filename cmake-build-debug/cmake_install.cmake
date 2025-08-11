@@ -1,4 +1,4 @@
-# Install script for directory: D:/C++/openGL
+# Install script for directory: C:/Code/openGL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,42 +34,42 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Users/danie/AppData/Local/Programs/CLion 2/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Users/danie/AppData/Local/Programs/CLion/bin/mingw/bin/objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/C++/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/cmake_install.cmake")
+  include("C:/Code/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/C++/openGL/cmake-build-debug/thirdparty/glad/cmake_install.cmake")
+  include("C:/Code/openGL/cmake-build-debug/thirdparty/glad/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/C++/openGL/cmake-build-debug/thirdparty/stb_image/cmake_install.cmake")
+  include("C:/Code/openGL/cmake-build-debug/thirdparty/stb_image/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/C++/openGL/cmake-build-debug/thirdparty/stb_truetype/cmake_install.cmake")
+  include("C:/Code/openGL/cmake-build-debug/thirdparty/stb_truetype/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/C++/openGL/cmake-build-debug/thirdparty/raudio/cmake_install.cmake")
+  include("C:/Code/openGL/cmake-build-debug/thirdparty/raudio/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/C++/openGL/cmake-build-debug/thirdparty/glm/cmake_install.cmake")
+  include("C:/Code/openGL/cmake-build-debug/thirdparty/glm/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/C++/openGL/cmake-build-debug/thirdparty/imgui-docking/cmake_install.cmake")
+  include("C:/Code/openGL/cmake-build-debug/thirdparty/imgui-docking/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -80,5 +80,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/C++/openGL/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Code/openGL/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

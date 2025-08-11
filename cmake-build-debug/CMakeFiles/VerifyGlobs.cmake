@@ -3,13 +3,13 @@
 cmake_policy(SET CMP0009 NEW)
 
 # MY_SOURCES at CMakeLists.txt:37 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/C++/openGL/src/*.cpp")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Code/openGL/src/*.cpp")
 set(OLD_GLOB
-  "D:/C++/openGL/src/Shader.cpp"
-  "D:/C++/openGL/src/main.cpp"
-  "D:/C++/openGL/src/openglErrorReporting.cpp"
+  "C:/Code/openGL/src/Shader.cpp"
+  "C:/Code/openGL/src/main.cpp"
+  "C:/Code/openGL/src/openglErrorReporting.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "D:/C++/openGL/cmake-build-debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "C:/Code/openGL/cmake-build-debug/CMakeFiles/cmake.verify_globs")
 endif()
