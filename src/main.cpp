@@ -1,23 +1,13 @@
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
 #include "glm/glm.hpp"
 #include "glm/gtc/matrix_transform.hpp"
 #include <glm/gtc/type_ptr.hpp>
-#include <openglErrorReporting.h>
 
 #include <iostream>
 #include <cmath>
 
 #include "Shader.h"
 #include "Texture.h"
-
-
-static void error_callback(int error, const char *description)
-{
-    std::cout << "Error: " <<  description << "\n";
-}
-
-void framebuffer_size_callback(GLFWwindow* window, int width, int height);
+#include "Window.h"
 
 void processInput(GLFWwindow* window);
 
@@ -25,38 +15,8 @@ float  mixValue = 0.2;
 
 int main()
 {
-    glfwSetErrorCallback(error_callback);
 
-    // Init GLFW
-    if (!glfwInit())
-        return -1;
-
-    // Set GLFW Window Hints
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-    glfwWindowHint(GLFW_OPENGL_DEBUG_CONTEXT, true);
-
-    // Create the GLFW Window Object
-    GLFWwindow* window = glfwCreateWindow(1080, 720, "LearnOpenGL", NULL, NULL);
-    if (window == NULL)
-    {
-        std::cout << "Failed to create GLFW window" << std::endl;
-        glfwTerminate();
-        return -1;
-    }
-    // Make the window's context current
-    glfwMakeContextCurrent(window);
-
-    // Set the viewport
-    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
-
-    // Init GLAD Before we call any OpenGL functions
-    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
-    {
-        std::cout << "Failed to initialize GLAD" << std::endl;
-        return -1;
-    }
+    Window window(1080, 720, "Learn OpenGL");
 
     // Create Our Default Shader Program
     Shader defaultShader(RESOURCES_PATH"shaders/default.vert", RESOURCES_PATH"shaders/default.frag");
@@ -123,10 +83,10 @@ int main()
 //    }
 
     // Application Loop
-    while (!glfwWindowShouldClose(window))
+    while (!glfwWindowShouldClose(window.GetWindow()))
     {
         // input
-        processInput(window);
+        processInput(window.GetWindow());
 
         // Rendering
         // Clear the color buffer
@@ -175,7 +135,7 @@ int main()
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
         // Check and Call events and swap the buffers
-        glfwSwapBuffers(window);
+        glfwSwapBuffers(window.GetWindow());
         glfwPollEvents();
     }
 
@@ -198,10 +158,4 @@ void processInput(GLFWwindow* window)
         mixValue < 0.0f ? mixValue = 0.0f : mixValue -= 0.0001f;
     if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
         mixValue > 1.0f ? mixValue = 1.0f : mixValue += 0.0001f;
-}
-
-
-void framebuffer_size_callback(GLFWwindow* window, int width, int height)
-{
-    glViewport(0, 0, width, height);
 }

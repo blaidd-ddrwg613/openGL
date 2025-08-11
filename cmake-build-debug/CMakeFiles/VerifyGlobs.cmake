@@ -7,6 +7,7 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "C:/Code/openGL/src/*.cpp")
 set(OLD_GLOB
   "C:/Code/openGL/src/Shader.cpp"
   "C:/Code/openGL/src/Texture.cpp"
+  "C:/Code/openGL/src/Window.cpp"
   "C:/Code/openGL/src/main.cpp"
   "C:/Code/openGL/src/openglErrorReporting.cpp"
   )
