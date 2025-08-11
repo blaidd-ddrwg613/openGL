@@ -2,12 +2,12 @@
 #include "glm/gtc/matrix_transform.hpp"
 #include <glm/gtc/type_ptr.hpp>
 
-#include <iostream>
-#include <cmath>
-
 #include "Shader.h"
 #include "Texture.h"
 #include "Window.h"
+#include "VAO.h"
+#include "VBO.h"
+#include "EBO.h"
 
 void processInput(GLFWwindow* window);
 
@@ -15,11 +15,12 @@ float  mixValue = 0.2;
 
 int main()
 {
-
     Window window(1080, 720, "Learn OpenGL");
 
     // Create Our Default Shader Program
     Shader defaultShader(RESOURCES_PATH"shaders/default.vert", RESOURCES_PATH"shaders/default.frag");
+    Texture texture1(RESOURCES_PATH"textures/container.jpg", false);
+    Texture texture2(RESOURCES_PATH"textures/awesomeface.png", true);
 
     // Triangle vertices
     float vertices[] = {
@@ -35,36 +36,23 @@ int main()
             1, 2, 3  // second triangle
     };
 
-    // Create VBO
-    unsigned int VBO, VAO, EBO;
-    glGenVertexArrays(1, &VAO);
-    glGenBuffers(1, &VBO);
-    glGenBuffers(1, &EBO);
+    // Generates Vertex Array Object and binds it
+    VAO VAO1;
+    VAO1.Bind();
 
-    glBindVertexArray(VAO);
+    // Generates Vertex Buffer Object and links it to vertices
+    VBO VBO1(vertices, sizeof(vertices));
+    // Generates Element Buffer Object and links it to indices
+    EBO EBO1(indices, sizeof(indices));
 
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
-
-    // Position attribute
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
-    glEnableVertexAttribArray(0);
-    // Color attribute (Attribute we're defining) (# of elements) (type) (normalized) (stride) (offset)
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
-    glEnableVertexAttribArray(1);
-    // Texture Coords attribute
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
-    glEnableVertexAttribArray(2);
-
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
-    glBindVertexArray(0);
-
-    Texture texture1(RESOURCES_PATH"textures/container.jpg", false);
-    Texture texture2(RESOURCES_PATH"textures/awesomeface.png", true);
-
+    // Links VBO attributes such as coordinates and colors to VAO
+    VAO1.LinkAttrib(VBO1, 0, 3, GL_FLOAT, 8 * sizeof(float), (void*)0);
+    VAO1.LinkAttrib(VBO1, 1, 3, GL_FLOAT, 8 * sizeof(float), (void*)(3 * sizeof(float)));
+    VAO1.LinkAttrib(VBO1, 2, 2, GL_FLOAT, 8 * sizeof(float), (void*)(6 * sizeof(float)));
+    // Unbind all to prevent accidentally modifying them
+    VAO1.Unbind();
+    VBO1.Unbind();
+    EBO1.Unbind();
 
     // tell opengl for each sampler to which texture unit it belongs to (only has to be done once)
     // -------------------------------------------------------------------------------------------
@@ -73,14 +61,6 @@ int main()
     glUniform1i(glGetUniformLocation(defaultShader.ID, "texture1"), 0);
     // or set it via the texture class
     defaultShader.setInt("texture2", 1);
-
-    // print each row and col of the matrix
-//    for (int i = 0; i < 4; i++) {
-//        for (int j = 0; j < 4; j++) {
-//            std::cout << trans[i][j] << " ";
-//        }
-//        std::cout << std::endl;
-//    }
 
     // Application Loop
     while (!glfwWindowShouldClose(window.GetWindow()))
@@ -119,7 +99,7 @@ int main()
         glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
 
         // Render Triangle
-        glBindVertexArray(VAO);
+        VAO1.Bind();
 //        glDrawArrays(GL_TRIANGLES, 0, 3);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
@@ -139,14 +119,11 @@ int main()
         glfwPollEvents();
     }
 
-    return 0;
-}
+    VAO1.Delete();
+    VBO1.Delete();
+    EBO1.Delete();
 
-void getMaxAttributes()
-{
-    int attributes;
-    glGetIntegerv(GL_MAX_VERTEX_ATTRIBS, &attributes);
-    std::cout << "GL_MAX_VERTEX_ATTRIBS: " << attributes << std::endl;
+    return 0;
 }
 
 void processInput(GLFWwindow* window)
