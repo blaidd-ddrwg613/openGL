@@ -62,6 +62,12 @@ int main()
     // or set it via the texture class
     defaultShader.setInt("texture2", 1);
 
+    // Setting Textures
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, texture1.ID);
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D, texture2.ID);
+
     // Application Loop
     while (!glfwWindowShouldClose(window.GetWindow()))
     {
@@ -69,19 +75,12 @@ int main()
         processInput(window.GetWindow());
 
         // Rendering
-        // Clear the color buffer
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        // Setting Textures
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, texture1.ID);
-        glActiveTexture(GL_TEXTURE1);
-        glBindTexture(GL_TEXTURE_2D, texture2.ID);
-
+        // Set Some Shader Uniforms
         defaultShader.use();
         defaultShader.setFloat("mixValue", mixValue);
-//        defaultShader.setFloat("offset", sin(glfwGetTime()));
 
         // Identity matrix
         glm::mat4 trans = glm::mat4(1.0f);
@@ -107,11 +106,17 @@ int main()
         // ---------------------
         trans = glm::mat4(1.0f); // reset it to identity matrix
         trans = glm::translate(trans, glm::vec3(-0.5f, 0.5f, 0.0f));
-        float scaleAmount = static_cast<float>(sin(glfwGetTime()));
+        auto scaleAmount = static_cast<float>(sin(glfwGetTime()));
         trans = glm::scale(trans, glm::vec3(scaleAmount, scaleAmount, scaleAmount));
         glUniformMatrix4fv(transformLoc, 1, GL_FALSE, &trans[0][0]); // this time take the matrix value array's first element as its memory pointer value
 
         // now with the uniform matrix being replaced with new transformations, draw it again.
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+
+        trans = glm::mat4(1.0f);
+        trans = glm::translate(trans, glm::vec3(0.5f, 0.5f, 0.0f));
+        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, &trans[0][0]);
+
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
         // Check and Call events and swap the buffers
