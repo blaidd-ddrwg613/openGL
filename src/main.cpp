@@ -17,11 +17,9 @@ int main()
 {
     Window window(1080, 720, "Learn OpenGL");
 
-    std::cout << "Width: " << window.GetWindowWidth() << " Height: " << window.GetWindowHeight() << std::endl;
+    glEnable(GL_DEPTH_TEST);
 
-    Shader defaultShader(RESOURCES_PATH"shaders/default.vert", RESOURCES_PATH"shaders/default.frag");
-    Texture texture1(RESOURCES_PATH"textures/container.jpg", false);
-    Texture texture2(RESOURCES_PATH"textures/awesomeface.png", true);
+    std::cout << "Width: " << window.GetWindowWidth() << " Height: " << window.GetWindowHeight() << std::endl;
 
     // Rectangle vertices
     float vertices[] = {
@@ -36,6 +34,65 @@ int main()
             0, 1, 3, // first triangle
             1, 2, 3  // second triangle
     };
+
+    float vertices_Cube[] = {
+            -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
+            0.5f, -0.5f, -0.5f,  1.0f, 0.0f,
+            0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
+            0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
+            -0.5f,  0.5f, -0.5f,  0.0f, 1.0f,
+            -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
+
+            -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+            0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
+            0.5f,  0.5f,  0.5f,  1.0f, 1.0f,
+            0.5f,  0.5f,  0.5f,  1.0f, 1.0f,
+            -0.5f,  0.5f,  0.5f,  0.0f, 1.0f,
+            -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+
+            -0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+            -0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
+            -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+            -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+            -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+            -0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+
+            0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+            0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
+            0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+            0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+            0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+            0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+
+            -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+            0.5f, -0.5f, -0.5f,  1.0f, 1.0f,
+            0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
+            0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
+            -0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+            -0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+
+            -0.5f,  0.5f, -0.5f,  0.0f, 1.0f,
+            0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
+            0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+            0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+            -0.5f,  0.5f,  0.5f,  0.0f, 0.0f,
+            -0.5f,  0.5f, -0.5f,  0.0f, 1.0f
+    };
+
+    glm::vec3 cubePositions[] = {
+            glm::vec3( 0.0f,  0.0f,  0.0f),
+            glm::vec3( 2.0f,  5.0f, -15.0f),
+            glm::vec3(-1.5f, -2.2f, -2.5f),
+            glm::vec3(-3.8f, -2.0f, -12.3f),
+            glm::vec3( 2.4f, -0.4f, -3.5f),
+            glm::vec3(-1.7f,  3.0f, -7.5f),
+            glm::vec3( 1.3f, -2.0f, -2.5f),
+            glm::vec3( 1.5f,  2.0f, -2.5f),
+            glm::vec3( 1.5f,  0.2f, -1.5f),
+            glm::vec3(-1.3f,  1.0f, -1.5f)
+    };
+
+
     // Generates Vertex Array Object and binds it
     VAO VAO1;
     VAO1.Bind();
@@ -54,20 +111,39 @@ int main()
     VBO1.Unbind();
     EBO1.Unbind();
 
+    // Cube Render
+    VAO VAO_Cube;
+    VAO_Cube.Bind();
+
+    VBO VBO_Cube(vertices_Cube, sizeof(vertices_Cube));
+    VAO_Cube.LinkAttrib(VBO_Cube, 0, 3, GL_FLOAT, 5 * sizeof(float), (void*)0);
+    VAO_Cube.LinkAttrib(VBO_Cube, 2, 2, GL_FLOAT, 5 * sizeof(float), (void*)(3 * sizeof(float)));
+    VAO_Cube.Unbind();
+    VBO_Cube.Unbind();
+
+    Shader defaultShader(RESOURCES_PATH"shaders/default.vert", RESOURCES_PATH"shaders/default.frag");
+    Texture containerTexture(RESOURCES_PATH"textures/container.jpg", false);
+    Texture awesomeTexture(RESOURCES_PATH"textures/awesomeface.png", true);
+    defaultShader.use();
+
     // tell opengl for each sampler to which texture unit it belongs to (only has to be done once)
     // -------------------------------------------------------------------------------------------
-    defaultShader.use(); // don't forget to activate/use the shader before setting uniforms!
-    // either set it manually like so:
-    glUniform1i(glGetUniformLocation(defaultShader.ID, "texture1"), 0);
-    // or set it via the texture class
+    defaultShader.setInt("texture1", 0);
     defaultShader.setInt("texture2", 1);
+    defaultShader.setVec3("color", 0.5, 0.4, 0.7);
+    defaultShader.setFloat("alpha", 0.2);
 
-    // Setting Textures
-    texture1.UseTexture(GL_TEXTURE0, texture1.ID);
-//    glActiveTexture(GL_TEXTURE0);
-//    glBindTexture(GL_TEXTURE_2D, texture1.ID);
+    // bind textures on corresponding texture units
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, containerTexture.ID);
     glActiveTexture(GL_TEXTURE1);
-    glBindTexture(GL_TEXTURE_2D, texture2.ID);
+    glBindTexture(GL_TEXTURE_2D, awesomeTexture.ID);
+
+    float fov = 45;
+//    auto aspect = (float)(window.GetWindowWidth() / window.GetWindowHeight());
+    float aspect = 1.5;
+    float zNear = 0.1f;
+    float zFar = 100.0f;
 
     // Application Loop
     while (!glfwWindowShouldClose(window.GetWindow()))
@@ -75,9 +151,24 @@ int main()
         // input
         processInput(window.GetWindow());
 
+        if (glfwGetKey(window.GetWindow(), GLFW_KEY_W) == GLFW_PRESS)
+        {
+            if (fov > 120.0f)
+                fov = 120.0f;
+            fov += 1.0f;
+        }
+        if (glfwGetKey(window.GetWindow(), GLFW_KEY_S) == GLFW_RELEASE)
+        {
+            if (fov < 45.0f)
+                fov = 45.0f;
+            fov -= 1.0f;
+        }
+
+        std::cout << "FOV: " << fov << std::endl;
+
         // Rendering
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         // Set Some Shader Uniforms
         defaultShader.use();
@@ -89,10 +180,11 @@ int main()
         glm::mat4 projection;
 
         // Matrix Transformations
-        model = glm::rotate(model, glm::radians(-55.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+//        model = glm::rotate(model, glm::radians(-55.0f), glm::vec3(1.0f, 0.0f, 0.0f));
         view = glm::translate(view, glm::vec3 (0.0f, 0.0f, -3.0f));
-        projection = glm::perspective(glm::radians(45.0f), (float)(window.GetWindowWidth() / window.GetWindowHeight()), 0.1f, 100.0f);
+        projection = glm::perspective(glm::radians(fov), aspect , zNear, zFar);
 
+        model = glm::rotate(model, (float) glfwGetTime() * glm::radians(50.0f), glm::vec3(0.5f, 1.0f, 0.0f));
 
         unsigned int transformLoc = glGetUniformLocation(defaultShader.ID, "transform");
         int modelLoc = glGetUniformLocation(defaultShader.ID, "model");
@@ -108,9 +200,19 @@ int main()
         glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
 
         // Render Triangle
-        VAO1.Bind();
-//        glDrawArrays(GL_TRIANGLES, 0, 3);
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+//        VAO1.Bind();
+//        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        VAO_Cube.Bind();
+        for (auto i = 0; i < 10; i++)
+        {
+            model = glm::mat4(1.0f);
+            model = glm::translate(model, cubePositions[i]);
+            float angle = 20.0f * i;
+            model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
+            defaultShader.setMat4("model", model);
+
+            glDrawArrays(GL_TRIANGLES, 0, 36);
+        }
 
         // Check and Call events and swap the buffers
         glfwSwapBuffers(window.GetWindow());
