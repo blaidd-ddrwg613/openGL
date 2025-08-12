@@ -153,15 +153,19 @@ int main()
 
         if (glfwGetKey(window.GetWindow(), GLFW_KEY_W) == GLFW_PRESS)
         {
-            if (fov > 120.0f)
-                fov = 120.0f;
-            fov += 1.0f;
+            if (fov > 180.0f)
+            {
+                fov = 180.0f;
+            }
+            fov += 0.05f;
         }
-        if (glfwGetKey(window.GetWindow(), GLFW_KEY_S) == GLFW_RELEASE)
+        if (glfwGetKey(window.GetWindow(), GLFW_KEY_S) == GLFW_PRESS)
         {
             if (fov < 45.0f)
+            {
                 fov = 45.0f;
-            fov -= 1.0f;
+            }
+            fov -= 0.05f;
         }
 
         std::cout << "FOV: " << fov << std::endl;
