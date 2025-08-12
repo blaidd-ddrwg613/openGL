@@ -2,6 +2,9 @@
 
 Window::Window(int width, int height, const char* title)
 {
+    this->width = width;
+    this->height = height;
+
     if (!glfwInit())
     {
         std::cout << "ERROR::FAILED TO INIT GLFW" << std::endl;

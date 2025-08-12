@@ -42,3 +42,9 @@ Texture::Texture(const char* texPath, bool flip)
 
     stbi_image_free(data);
 }
+
+void Texture::UseTexture(int textureUnit, int textureID)
+{
+    glActiveTexture(textureUnit);
+    glBindTexture(GL_TEXTURE_2D, textureID);
+}

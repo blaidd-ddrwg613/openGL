@@ -11,13 +11,14 @@
 
 void processInput(GLFWwindow* window);
 
-float  mixValue = 0.2;
+
 
 int main()
 {
     Window window(1080, 720, "Learn OpenGL");
 
-    // Create Our Default Shader Program
+    std::cout << "Width: " << window.GetWindowWidth() << " Height: " << window.GetWindowHeight() << std::endl;
+
     Shader defaultShader(RESOURCES_PATH"shaders/default.vert", RESOURCES_PATH"shaders/default.frag");
     Texture texture1(RESOURCES_PATH"textures/container.jpg", false);
     Texture texture2(RESOURCES_PATH"textures/awesomeface.png", true);
@@ -29,26 +30,12 @@ int main()
             0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,1.0f, 0.0f,   // bottom right
             -0.5f, -0.5f, 0.0f,0.0f, 0.0f, 1.0f,0.0f, 0.0f,   // bottom left
             -0.5f,  0.5f, 0.0f,1.0f, 1.0f, 0.0f,0.0f, 1.0f    // top left
-            };
+    };
 
     unsigned int indices[] = {
             0, 1, 3, // first triangle
             1, 2, 3  // second triangle
     };
-
-    float t_vertices[] =
-            {
-            // position                     // Color
-            0.0f, 1.0f, 0.0f,0.6f, 0.1f, 0.5f, // Top
-            -0.5f, 0.0f, 0.0f, 0.6f, 0.1f, 0.5f, // Left
-            0.5f, 0.0f, 0.0f, 0.6f, 0.1f, 0.5f, // Right
-            };
-
-    unsigned int t_indicies[] =
-            {
-            0, 1, 2
-            };
-
     // Generates Vertex Array Object and binds it
     VAO VAO1;
     VAO1.Bind();
@@ -67,20 +54,6 @@ int main()
     VBO1.Unbind();
     EBO1.Unbind();
 
-    // Triangle
-    VAO VAO2;
-    VAO2.Bind();
-
-    VBO VBO2(t_vertices, sizeof(t_vertices));
-    EBO EBO2(t_indicies, sizeof(t_indicies));
-
-    VAO2.LinkAttrib(VBO2, 0, 3, GL_FLOAT, 6 * sizeof(float), (void*)0);
-    VAO2.LinkAttrib(VBO2, 1, 3, GL_FLOAT, 6 * sizeof(float), (void*)(3 * sizeof(float)));
-
-    VAO2.Unbind();
-    VBO2.Unbind();
-    EBO2.Unbind();
-
     // tell opengl for each sampler to which texture unit it belongs to (only has to be done once)
     // -------------------------------------------------------------------------------------------
     defaultShader.use(); // don't forget to activate/use the shader before setting uniforms!
@@ -90,8 +63,9 @@ int main()
     defaultShader.setInt("texture2", 1);
 
     // Setting Textures
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, texture1.ID);
+    texture1.UseTexture(GL_TEXTURE0, texture1.ID);
+//    glActiveTexture(GL_TEXTURE0);
+//    glBindTexture(GL_TEXTURE_2D, texture1.ID);
     glActiveTexture(GL_TEXTURE1);
     glBindTexture(GL_TEXTURE_2D, texture2.ID);
 
@@ -107,43 +81,35 @@ int main()
 
         // Set Some Shader Uniforms
         defaultShader.use();
-        defaultShader.setFloat("mixValue", mixValue);
 
-        // Identity matrix
+        // Matrices
         glm::mat4 trans = glm::mat4(1.0f);
-        // Move the rectangle to the bottom right
-        trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
-        // Rotate the rectangle over time  along the z axis
-        trans = glm::rotate(trans,(float)glfwGetTime(),glm::vec3(0.0f,0.0f,1.0f));
-        // Scale the rectangle in half
-        trans = glm::scale(trans, glm::vec3(0.5f, 0.5f, 0.5f));
+        glm::mat4 model = glm::mat4(1.0f);
+        glm::mat4 view = glm::mat4(1.0f);
+        glm::mat4 projection;
+
+        // Matrix Transformations
+        model = glm::rotate(model, glm::radians(-55.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+        view = glm::translate(view, glm::vec3 (0.0f, 0.0f, -3.0f));
+        projection = glm::perspective(glm::radians(45.0f), (float)(window.GetWindowWidth() / window.GetWindowHeight()), 0.1f, 100.0f);
+
 
         unsigned int transformLoc = glGetUniformLocation(defaultShader.ID, "transform");
+        int modelLoc = glGetUniformLocation(defaultShader.ID, "model");
+        int viewLoc = glGetUniformLocation(defaultShader.ID, "view");
+        int projectionLoc = glGetUniformLocation(defaultShader.ID, "projection");
+
         // (1. uniform Loctaion) (2. # of Matricies we want to send) (3. transpose the matrix (no need with GLM)
         // (4. Matrix Data (GLM stores their matrices' data in a way that doesn't always match OpenGL's expectations,
         // so we first convert the data with GLM's built-in function value_ptr.)
         glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+        glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
 
         // Render Triangle
         VAO1.Bind();
 //        glDrawArrays(GL_TRIANGLES, 0, 3);
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-
-        // second transformation
-        // ---------------------
-        trans = glm::mat4(1.0f); // reset it to identity matrix
-        trans = glm::translate(trans, glm::vec3(-0.5f, 0.5f, 0.0f));
-        auto scaleAmount = static_cast<float>(sin(glfwGetTime()));
-        trans = glm::scale(trans, glm::vec3(scaleAmount, scaleAmount, scaleAmount));
-        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, &trans[0][0]); // this time take the matrix value array's first element as its memory pointer value
-
-        // now with the uniform matrix being replaced with new transformations, draw it again.
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-
-        // Don't forget to reset the matrix if you don't want it in relation to the previous space.
-        trans = glm::mat4(1.0f);
-        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, &trans[0][0]);
-        VAO2.Bind();
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
         // Check and Call events and swap the buffers
@@ -162,9 +128,4 @@ void processInput(GLFWwindow* window)
 {
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, GLFW_TRUE);
-
-    if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
-        mixValue < 0.0f ? mixValue = 0.0f : mixValue -= 0.0001f;
-    if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
-        mixValue > 1.0f ? mixValue = 1.0f : mixValue += 0.0001f;
 }
