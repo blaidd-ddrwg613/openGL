@@ -118,15 +118,16 @@ int main()
 
     // Light Shaders
     Shader lightShader(RESOURCES_PATH"shaders/light.vert", RESOURCES_PATH"shaders/light.frag");
-    Shader lightCubeShader(RESOURCES_PATH"shaders/light_source.vert", RESOURCES_PATH"shaders/light_source.frag");
-
-    // Cube Shader
-    Shader defaultShader(RESOURCES_PATH"shaders/default.vert", RESOURCES_PATH"shaders/default.frag");
     lightShader.use();
     lightShader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
     lightShader.setVec3("lightColor",  1.0f, 1.0f, 1.0f);
-    lightShader.setVec3("lightPos", lightPos);
-    lightShader.setVec3("viewPos", camera.Position);
+
+    Shader lightCubeShader(RESOURCES_PATH"shaders/light_source.vert", RESOURCES_PATH"shaders/light_source.frag");
+    lightCubeShader.use();
+
+    // Cube Shader
+    Shader defaultShader(RESOURCES_PATH"shaders/default.vert", RESOURCES_PATH"shaders/default.frag");
+
 
     // Application Loop
     while (!glfwWindowShouldClose(window.GetWindow()))
@@ -159,6 +160,8 @@ int main()
         glm::mat4 model = glm::mat4(1.0f);
 //        model = glm::translate(model, glm::vec3(0.0f, -1.0f, 0.0f));
         lightShader.setMat4("model", model);
+        lightShader.setVec3("lightPos", lightPos);
+        lightShader.setVec3("viewPos", camera.Position);
 
         // render the cube
         glBindVertexArray(VAO_Cube.ID);
@@ -169,10 +172,15 @@ int main()
         lightCubeShader.use();
         lightCubeShader.setMat4("projection", projection);
         lightCubeShader.setMat4("view", view);
+
         model = glm::mat4(1.0f);
         model = glm::translate(model, lightPos);
         model = glm::scale(model, glm::vec3(0.2f)); // a smaller cube
         lightCubeShader.setMat4("model", model);
+
+        lightPos.x = 1.0f + sin(glfwGetTime()) * 2.0f;
+        lightPos.y = sin(glfwGetTime() / 2.0f) * 1.0f;
+
 
         glBindVertexArray(VAO_Light.ID);
         glDrawArrays(GL_TRIANGLES, 0, 36);
