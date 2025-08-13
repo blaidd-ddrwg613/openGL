@@ -2,11 +2,9 @@
 #include "glm/gtc/matrix_transform.hpp"
 
 #include "Shader.h"
-#include "Texture.h"
 #include "Window.h"
 #include "VAO.h"
 #include "VBO.h"
-#include "EBO.h"
 #include "Camera.h"
 #include "Input.h"
 
@@ -38,20 +36,6 @@ int main()
 
     glfwSetCursorPosCallback(window.GetWindow(), mouse_callback);
     glfwSetScrollCallback(window.GetWindow(), scroll_callback);
-
-//    // Rectangle vertices
-//    float vertices[] = {
-//            // positions (x,y,z)               // Color(r,g,b)           // texture coords(tx, ty)
-//            0.5f,  0.5f, 0.0f,    1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // top right
-//            0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,1.0f, 0.0f,   // bottom right
-//            -0.5f, -0.5f, 0.0f,0.0f, 0.0f, 1.0f,0.0f, 0.0f,   // bottom left
-//            -0.5f,  0.5f, 0.0f,1.0f, 1.0f, 0.0f,0.0f, 1.0f    // top left
-//    };
-//
-//    unsigned int indices[] = {
-//            0, 1, 3, // first triangle
-//            1, 2, 3  // second triangle
-//    };
 
     // All Faces of a Cube and its texture coords
     float vertices_Cube[] = {
@@ -103,7 +87,9 @@ int main()
     VAO_Cube.Bind();
 
     VBO VBO_Cube(vertices_Cube, sizeof(vertices_Cube));
+    // Vertex Attributes
     VAO_Cube.LinkAttrib(VBO_Cube, 0, 3, GL_FLOAT, 6 * sizeof(float), (void*)0);
+    // Normal Attributes
     VAO_Cube.LinkAttrib(VBO_Cube, 1, 3, GL_FLOAT, 6 * sizeof(float), (void*)(3 * sizeof(float)));
     VAO_Cube.Unbind();
 
@@ -133,7 +119,6 @@ int main()
 
     // Cube Shader
     Shader defaultShader(RESOURCES_PATH"shaders/default.vert", RESOURCES_PATH"shaders/default.frag");
-
 
     // Application Loop
     while (!glfwWindowShouldClose(window.GetWindow()))
@@ -166,10 +151,7 @@ int main()
         
         // Lighting
         // light properties
-        glm::vec3 lightColor;
-        lightColor.x = static_cast<float>(sin(glfwGetTime() * 2.0));
-        lightColor.y = static_cast<float>(sin(glfwGetTime() * 0.7));
-        lightColor.z = static_cast<float>(sin(glfwGetTime() * 1.3));
+        glm::vec3 lightColor(1.0f, 0.0f, 0.0f);
         glm::vec3 diffuseColor = lightColor   * glm::vec3(0.5f); // decrease the influence
         glm::vec3 ambientColor = diffuseColor * glm::vec3(0.2f); // low influence
         lightShader.setVec3("light.ambient", ambientColor);

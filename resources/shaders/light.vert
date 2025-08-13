@@ -12,7 +12,7 @@ uniform mat4 projection;
 void main()
 {
     FragPos = vec3(model * vec4(aPos, 1.0));
-    // converting to world space
+    // converting to world space we should calculate this on the cpu and send it to the gpu
     Normal = mat3(transpose(inverse(model))) * aNormal;
 
     gl_Position = projection * view * vec4(FragPos, 1.0);
