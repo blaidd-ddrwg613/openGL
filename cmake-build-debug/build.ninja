@@ -49,6 +49,14 @@ cmake_ninja_workdir = C$:/Code/openGL/cmake-build-debug/
 
 build cmake_object_order_depends_target_mygame: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_imgui cmake_object_order_depends_target_raudio cmake_object_order_depends_target_stb_image cmake_object_order_depends_target_stb_truetype
 
+build CMakeFiles/mygame.dir/src/Camera.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug C$:/Code/openGL/src/Camera.cpp || cmake_object_order_depends_target_mygame
+  DEFINES = -DGLFW_INCLUDE_NONE=1 -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\"C:/Code/openGL/resources/\"
+  DEP_FILE = CMakeFiles\mygame.dir\src\Camera.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Code/openGL/include -IC:/Code/openGL/thirdparty/glm/include -IC:/Code/openGL/thirdparty/glm -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include -IC:/Code/openGL/thirdparty/stb_image/include -IC:/Code/openGL/thirdparty/stb_truetype/include -IC:/Code/openGL/thirdparty/raudio/include -IC:/Code/openGL/thirdparty/imgui-docking/imgui
+  OBJECT_DIR = CMakeFiles\mygame.dir
+  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src
+
 build CMakeFiles/mygame.dir/src/EBO.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug C$:/Code/openGL/src/EBO.cpp || cmake_object_order_depends_target_mygame
   DEFINES = -DGLFW_INCLUDE_NONE=1 -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\"C:/Code/openGL/resources/\"
   DEP_FILE = CMakeFiles\mygame.dir\src\EBO.cpp.obj.d
@@ -121,7 +129,7 @@ build CMakeFiles/mygame.dir/src/openglErrorReporting.cpp.obj: CXX_COMPILER__myga
 #############################################
 # Link the executable mygame.exe
 
-build mygame.exe: CXX_EXECUTABLE_LINKER__mygame_Debug CMakeFiles/mygame.dir/src/EBO.cpp.obj CMakeFiles/mygame.dir/src/Shader.cpp.obj CMakeFiles/mygame.dir/src/Texture.cpp.obj CMakeFiles/mygame.dir/src/VAO.cpp.obj CMakeFiles/mygame.dir/src/VBO.cpp.obj CMakeFiles/mygame.dir/src/Window.cpp.obj CMakeFiles/mygame.dir/src/main.cpp.obj CMakeFiles/mygame.dir/src/openglErrorReporting.cpp.obj | thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/glad/libglad.a thirdparty/stb_image/libstb_image.a thirdparty/stb_truetype/libstb_truetype.a thirdparty/raudio/libraudio.a thirdparty/imgui-docking/libimgui.a thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/glad/libglad.a || thirdparty/glad/libglad.a thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/imgui-docking/libimgui.a thirdparty/raudio/libraudio.a thirdparty/stb_image/libstb_image.a thirdparty/stb_truetype/libstb_truetype.a
+build mygame.exe: CXX_EXECUTABLE_LINKER__mygame_Debug CMakeFiles/mygame.dir/src/Camera.cpp.obj CMakeFiles/mygame.dir/src/EBO.cpp.obj CMakeFiles/mygame.dir/src/Shader.cpp.obj CMakeFiles/mygame.dir/src/Texture.cpp.obj CMakeFiles/mygame.dir/src/VAO.cpp.obj CMakeFiles/mygame.dir/src/VBO.cpp.obj CMakeFiles/mygame.dir/src/Window.cpp.obj CMakeFiles/mygame.dir/src/main.cpp.obj CMakeFiles/mygame.dir/src/openglErrorReporting.cpp.obj | thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/glad/libglad.a thirdparty/stb_image/libstb_image.a thirdparty/stb_truetype/libstb_truetype.a thirdparty/raudio/libraudio.a thirdparty/imgui-docking/libimgui.a thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/glad/libglad.a || thirdparty/glad/libglad.a thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/imgui-docking/libimgui.a thirdparty/raudio/libraudio.a thirdparty/stb_image/libstb_image.a thirdparty/stb_truetype/libstb_truetype.a
   FLAGS = -g
   LINK_LIBRARIES = thirdparty/glfw-3.3.2/src/libglfw3.a  thirdparty/glad/libglad.a  thirdparty/stb_image/libstb_image.a  thirdparty/stb_truetype/libstb_truetype.a  thirdparty/raudio/libraudio.a  thirdparty/imgui-docking/libimgui.a  thirdparty/glfw-3.3.2/src/libglfw3.a  thirdparty/glad/libglad.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\mygame.dir

@@ -8,23 +8,37 @@
 #include "VAO.h"
 #include "VBO.h"
 #include "EBO.h"
+#include "Camera.h"
+#include "Input.h"
 
 void processInput(GLFWwindow* window);
+void mouse_callback(GLFWwindow* window, double xposIn, double yposIn);
+void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 
-glm::vec3 cameraPos   = glm::vec3(0.0f, 0.0f,  3.0f);
-glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
-glm::vec3 cameraUp    = glm::vec3(0.0f, 1.0f,  0.0f);
+int SCR_WIDTH = 1080;
+int SCR_HEIGHT = 720;
+
+Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
+bool firstMouse = true;
+float lastX = SCR_WIDTH / 2.0f;
+float lastY = SCR_HEIGHT / 2.0f;
 
 float deltaTime = 0.0f; // Time between current frame and last frame
 float lastFrame = 0.0f; // Time since last frame
 
+float aspect;
+float zNear = 0.1f;
+float zFar = 100.0f;
+
 int main()
 {
     Window window(1080, 720, "Learn OpenGL");
-
+    glfwSetInputMode(window.GetWindow(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+    aspect = (float)(window.GetWindowWidth() / window.GetWindowHeight());
     glEnable(GL_DEPTH_TEST);
 
-    std::cout << "Width: " << window.GetWindowWidth() << " Height: " << window.GetWindowHeight() << std::endl;
+    glfwSetCursorPosCallback(window.GetWindow(), mouse_callback);
+    glfwSetScrollCallback(window.GetWindow(), scroll_callback);
 
     // Rectangle vertices
     float vertices[] = {
@@ -40,6 +54,7 @@ int main()
             1, 2, 3  // second triangle
     };
 
+    // All Faces of a Cube and its texture coords
     float vertices_Cube[] = {
             -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
             0.5f, -0.5f, -0.5f,  1.0f, 0.0f,
@@ -144,66 +159,47 @@ int main()
     glActiveTexture(GL_TEXTURE1);
     glBindTexture(GL_TEXTURE_2D, awesomeTexture.ID);
 
-    float fov = 45;
-//    auto aspect = (float)(window.GetWindowWidth() / window.GetWindowHeight());
-    float aspect = 1.5;
-    float zNear = 0.1f;
-    float zFar = 100.0f;
-
     // Application Loop
     while (!glfwWindowShouldClose(window.GetWindow()))
     {
-        // Calculate Delta Time
-        float currentFrame = glfwGetTime();
+        // per-frame time logic
+        // --------------------
+        float currentFrame = static_cast<float>(glfwGetTime());
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
 
         // input
+        // -----
         processInput(window.GetWindow());
 
-        // Rendering
+        // render
+        // ------
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        // Set Some Shader Uniforms
+        // bind textures on corresponding texture units
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, containerTexture.ID);
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, awesomeTexture.ID);
+
+        // activate shader
         defaultShader.use();
 
-        // Matrices
-        glm::mat4 trans = glm::mat4(1.0f);
-        glm::mat4 model = glm::mat4(1.0f);
-        glm::mat4 view;
-        glm::mat4 projection;
+        // pass projection matrix to shader (note that in this case it could change every frame)
+        glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
+        defaultShader.setMat4("projection", projection);
 
-        // Camera LookAt Mat
-        view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
+        // camera/view transformation
+        glm::mat4 view = camera.GetViewMatrix();
+        defaultShader.setMat4("view", view);
 
-
-        // Matrix Transformations
-//        model = glm::rotate(model, glm::radians(-55.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-        projection = glm::perspective(glm::radians(fov), aspect , zNear, zFar);
-
-        model = glm::rotate(model, (float) glfwGetTime() * glm::radians(50.0f), glm::vec3(0.5f, 1.0f, 0.0f));
-
-        unsigned int transformLoc = glGetUniformLocation(defaultShader.ID, "transform");
-        int modelLoc = glGetUniformLocation(defaultShader.ID, "model");
-        int viewLoc = glGetUniformLocation(defaultShader.ID, "view");
-        int projectionLoc = glGetUniformLocation(defaultShader.ID, "projection");
-
-        // (1. uniform Loctaion) (2. # of Matricies we want to send) (3. transpose the matrix (no need with GLM)
-        // (4. Matrix Data (GLM stores their matrices' data in a way that doesn't always match OpenGL's expectations,
-        // so we first convert the data with GLM's built-in function value_ptr.)
-        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
-        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-        glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
-
-        // Render Triangle
-//        VAO1.Bind();
-//        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-        VAO_Cube.Bind();
-        for (auto i = 0; i < 10; i++)
+        // render boxes
+        glBindVertexArray(VAO_Cube.ID);
+        for (unsigned int i = 0; i < 10; i++)
         {
-            model = glm::mat4(1.0f);
+            // calculate the model matrix for each object and pass it to shader before drawing
+            glm::mat4 model = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
             model = glm::translate(model, cubePositions[i]);
             float angle = 20.0f * i;
             model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
@@ -212,7 +208,8 @@ int main()
             glDrawArrays(GL_TRIANGLES, 0, 36);
         }
 
-        // Check and Call events and swap the buffers
+        // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
+        // -------------------------------------------------------------------------------
         glfwSwapBuffers(window.GetWindow());
         glfwPollEvents();
     }
@@ -224,18 +221,51 @@ int main()
     return 0;
 }
 
-void processInput(GLFWwindow* window)
+// process all input: query GLFW whether relevant keys are pressed/released this frame and react accordingly
+// ---------------------------------------------------------------------------------------------------------
+void processInput(GLFWwindow *window)
 {
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-        glfwSetWindowShouldClose(window, GLFW_TRUE);
+        glfwSetWindowShouldClose(window, true);
 
-    const float cameraSpeed = 5.5f * deltaTime;
+    camera.SetBoost(Input::IsKeyPressed(GLFW_KEY_LEFT_SHIFT));
+
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-        cameraPos += cameraSpeed * cameraFront;
+        camera.ProcessKeyboard(FORWARD, deltaTime);
     if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-        cameraPos -= cameraSpeed * cameraFront;
+        camera.ProcessKeyboard(BACKWARD, deltaTime);
     if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-        cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+        camera.ProcessKeyboard(LEFT, deltaTime);
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-        cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+        camera.ProcessKeyboard(RIGHT, deltaTime);
+}
+
+// glfw: whenever the mouse moves, this callback is called
+// -------------------------------------------------------
+void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
+{
+    float xpos = static_cast<float>(xposIn);
+    float ypos = static_cast<float>(yposIn);
+
+    if (firstMouse)
+    {
+        lastX = xpos;
+        lastY = ypos;
+        firstMouse = false;
+    }
+
+    float xoffset = xpos - lastX;
+    float yoffset = lastY - ypos; // reversed since y-coordinates go from bottom to top
+
+    lastX = xpos;
+    lastY = ypos;
+
+    camera.ProcessMouseMovement(xoffset, yoffset);
+}
+
+// glfw: whenever the mouse scroll wheel scrolls, this callback is called
+// ----------------------------------------------------------------------
+void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
+{
+    camera.ProcessMouseScroll(static_cast<float>(yoffset));
 }
