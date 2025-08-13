@@ -1,4 +1,4 @@
-C:/Code/openGL/cmake-build-debug/CMakeFiles/mygame.dir
+C:/Code/openGL/cmake-build-debug/CMakeFiles/LearnOpenGL.dir
 C:/Code/openGL/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Code/openGL/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 C:/Code/openGL/cmake-build-debug/thirdparty/glfw-3.3.2/CMakeFiles/edit_cache.dir

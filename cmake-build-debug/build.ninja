@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: mygame
+# Project: LearnOpenGL
 # Configurations: Debug
 # =============================================================================
 
@@ -41,103 +41,103 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Code/openGL/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target mygame
+# Object build statements for EXECUTABLE target LearnOpenGL
 
 
 #############################################
-# Order-only phony target for mygame
+# Order-only phony target for LearnOpenGL
 
-build cmake_object_order_depends_target_mygame: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_imgui cmake_object_order_depends_target_raudio cmake_object_order_depends_target_stb_image cmake_object_order_depends_target_stb_truetype
+build cmake_object_order_depends_target_LearnOpenGL: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_imgui cmake_object_order_depends_target_raudio cmake_object_order_depends_target_stb_image cmake_object_order_depends_target_stb_truetype
 
-build CMakeFiles/mygame.dir/src/Camera.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug C$:/Code/openGL/src/Camera.cpp || cmake_object_order_depends_target_mygame
+build CMakeFiles/LearnOpenGL.dir/src/Camera.cpp.obj: CXX_COMPILER__LearnOpenGL_unscanned_Debug C$:/Code/openGL/src/Camera.cpp || cmake_object_order_depends_target_LearnOpenGL
   DEFINES = -DGLFW_INCLUDE_NONE=1 -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\"C:/Code/openGL/resources/\"
-  DEP_FILE = CMakeFiles\mygame.dir\src\Camera.cpp.obj.d
+  DEP_FILE = CMakeFiles\LearnOpenGL.dir\src\Camera.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -IC:/Code/openGL/include -IC:/Code/openGL/thirdparty/glm/include -IC:/Code/openGL/thirdparty/glm -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include -IC:/Code/openGL/thirdparty/stb_image/include -IC:/Code/openGL/thirdparty/stb_truetype/include -IC:/Code/openGL/thirdparty/raudio/include -IC:/Code/openGL/thirdparty/imgui-docking/imgui
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src
+  OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
+  OBJECT_FILE_DIR = CMakeFiles\LearnOpenGL.dir\src
 
-build CMakeFiles/mygame.dir/src/EBO.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug C$:/Code/openGL/src/EBO.cpp || cmake_object_order_depends_target_mygame
+build CMakeFiles/LearnOpenGL.dir/src/EBO.cpp.obj: CXX_COMPILER__LearnOpenGL_unscanned_Debug C$:/Code/openGL/src/EBO.cpp || cmake_object_order_depends_target_LearnOpenGL
   DEFINES = -DGLFW_INCLUDE_NONE=1 -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\"C:/Code/openGL/resources/\"
-  DEP_FILE = CMakeFiles\mygame.dir\src\EBO.cpp.obj.d
+  DEP_FILE = CMakeFiles\LearnOpenGL.dir\src\EBO.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -IC:/Code/openGL/include -IC:/Code/openGL/thirdparty/glm/include -IC:/Code/openGL/thirdparty/glm -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include -IC:/Code/openGL/thirdparty/stb_image/include -IC:/Code/openGL/thirdparty/stb_truetype/include -IC:/Code/openGL/thirdparty/raudio/include -IC:/Code/openGL/thirdparty/imgui-docking/imgui
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src
+  OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
+  OBJECT_FILE_DIR = CMakeFiles\LearnOpenGL.dir\src
 
-build CMakeFiles/mygame.dir/src/Shader.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug C$:/Code/openGL/src/Shader.cpp || cmake_object_order_depends_target_mygame
+build CMakeFiles/LearnOpenGL.dir/src/Shader.cpp.obj: CXX_COMPILER__LearnOpenGL_unscanned_Debug C$:/Code/openGL/src/Shader.cpp || cmake_object_order_depends_target_LearnOpenGL
   DEFINES = -DGLFW_INCLUDE_NONE=1 -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\"C:/Code/openGL/resources/\"
-  DEP_FILE = CMakeFiles\mygame.dir\src\Shader.cpp.obj.d
+  DEP_FILE = CMakeFiles\LearnOpenGL.dir\src\Shader.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -IC:/Code/openGL/include -IC:/Code/openGL/thirdparty/glm/include -IC:/Code/openGL/thirdparty/glm -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include -IC:/Code/openGL/thirdparty/stb_image/include -IC:/Code/openGL/thirdparty/stb_truetype/include -IC:/Code/openGL/thirdparty/raudio/include -IC:/Code/openGL/thirdparty/imgui-docking/imgui
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src
+  OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
+  OBJECT_FILE_DIR = CMakeFiles\LearnOpenGL.dir\src
 
-build CMakeFiles/mygame.dir/src/Texture.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug C$:/Code/openGL/src/Texture.cpp || cmake_object_order_depends_target_mygame
+build CMakeFiles/LearnOpenGL.dir/src/Texture.cpp.obj: CXX_COMPILER__LearnOpenGL_unscanned_Debug C$:/Code/openGL/src/Texture.cpp || cmake_object_order_depends_target_LearnOpenGL
   DEFINES = -DGLFW_INCLUDE_NONE=1 -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\"C:/Code/openGL/resources/\"
-  DEP_FILE = CMakeFiles\mygame.dir\src\Texture.cpp.obj.d
+  DEP_FILE = CMakeFiles\LearnOpenGL.dir\src\Texture.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -IC:/Code/openGL/include -IC:/Code/openGL/thirdparty/glm/include -IC:/Code/openGL/thirdparty/glm -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include -IC:/Code/openGL/thirdparty/stb_image/include -IC:/Code/openGL/thirdparty/stb_truetype/include -IC:/Code/openGL/thirdparty/raudio/include -IC:/Code/openGL/thirdparty/imgui-docking/imgui
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src
+  OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
+  OBJECT_FILE_DIR = CMakeFiles\LearnOpenGL.dir\src
 
-build CMakeFiles/mygame.dir/src/VAO.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug C$:/Code/openGL/src/VAO.cpp || cmake_object_order_depends_target_mygame
+build CMakeFiles/LearnOpenGL.dir/src/VAO.cpp.obj: CXX_COMPILER__LearnOpenGL_unscanned_Debug C$:/Code/openGL/src/VAO.cpp || cmake_object_order_depends_target_LearnOpenGL
   DEFINES = -DGLFW_INCLUDE_NONE=1 -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\"C:/Code/openGL/resources/\"
-  DEP_FILE = CMakeFiles\mygame.dir\src\VAO.cpp.obj.d
+  DEP_FILE = CMakeFiles\LearnOpenGL.dir\src\VAO.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -IC:/Code/openGL/include -IC:/Code/openGL/thirdparty/glm/include -IC:/Code/openGL/thirdparty/glm -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include -IC:/Code/openGL/thirdparty/stb_image/include -IC:/Code/openGL/thirdparty/stb_truetype/include -IC:/Code/openGL/thirdparty/raudio/include -IC:/Code/openGL/thirdparty/imgui-docking/imgui
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src
+  OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
+  OBJECT_FILE_DIR = CMakeFiles\LearnOpenGL.dir\src
 
-build CMakeFiles/mygame.dir/src/VBO.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug C$:/Code/openGL/src/VBO.cpp || cmake_object_order_depends_target_mygame
+build CMakeFiles/LearnOpenGL.dir/src/VBO.cpp.obj: CXX_COMPILER__LearnOpenGL_unscanned_Debug C$:/Code/openGL/src/VBO.cpp || cmake_object_order_depends_target_LearnOpenGL
   DEFINES = -DGLFW_INCLUDE_NONE=1 -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\"C:/Code/openGL/resources/\"
-  DEP_FILE = CMakeFiles\mygame.dir\src\VBO.cpp.obj.d
+  DEP_FILE = CMakeFiles\LearnOpenGL.dir\src\VBO.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -IC:/Code/openGL/include -IC:/Code/openGL/thirdparty/glm/include -IC:/Code/openGL/thirdparty/glm -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include -IC:/Code/openGL/thirdparty/stb_image/include -IC:/Code/openGL/thirdparty/stb_truetype/include -IC:/Code/openGL/thirdparty/raudio/include -IC:/Code/openGL/thirdparty/imgui-docking/imgui
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src
+  OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
+  OBJECT_FILE_DIR = CMakeFiles\LearnOpenGL.dir\src
 
-build CMakeFiles/mygame.dir/src/Window.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug C$:/Code/openGL/src/Window.cpp || cmake_object_order_depends_target_mygame
+build CMakeFiles/LearnOpenGL.dir/src/Window.cpp.obj: CXX_COMPILER__LearnOpenGL_unscanned_Debug C$:/Code/openGL/src/Window.cpp || cmake_object_order_depends_target_LearnOpenGL
   DEFINES = -DGLFW_INCLUDE_NONE=1 -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\"C:/Code/openGL/resources/\"
-  DEP_FILE = CMakeFiles\mygame.dir\src\Window.cpp.obj.d
+  DEP_FILE = CMakeFiles\LearnOpenGL.dir\src\Window.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -IC:/Code/openGL/include -IC:/Code/openGL/thirdparty/glm/include -IC:/Code/openGL/thirdparty/glm -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include -IC:/Code/openGL/thirdparty/stb_image/include -IC:/Code/openGL/thirdparty/stb_truetype/include -IC:/Code/openGL/thirdparty/raudio/include -IC:/Code/openGL/thirdparty/imgui-docking/imgui
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src
+  OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
+  OBJECT_FILE_DIR = CMakeFiles\LearnOpenGL.dir\src
 
-build CMakeFiles/mygame.dir/src/main.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug C$:/Code/openGL/src/main.cpp || cmake_object_order_depends_target_mygame
+build CMakeFiles/LearnOpenGL.dir/src/main.cpp.obj: CXX_COMPILER__LearnOpenGL_unscanned_Debug C$:/Code/openGL/src/main.cpp || cmake_object_order_depends_target_LearnOpenGL
   DEFINES = -DGLFW_INCLUDE_NONE=1 -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\"C:/Code/openGL/resources/\"
-  DEP_FILE = CMakeFiles\mygame.dir\src\main.cpp.obj.d
+  DEP_FILE = CMakeFiles\LearnOpenGL.dir\src\main.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -IC:/Code/openGL/include -IC:/Code/openGL/thirdparty/glm/include -IC:/Code/openGL/thirdparty/glm -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include -IC:/Code/openGL/thirdparty/stb_image/include -IC:/Code/openGL/thirdparty/stb_truetype/include -IC:/Code/openGL/thirdparty/raudio/include -IC:/Code/openGL/thirdparty/imgui-docking/imgui
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src
+  OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
+  OBJECT_FILE_DIR = CMakeFiles\LearnOpenGL.dir\src
 
-build CMakeFiles/mygame.dir/src/openglErrorReporting.cpp.obj: CXX_COMPILER__mygame_unscanned_Debug C$:/Code/openGL/src/openglErrorReporting.cpp || cmake_object_order_depends_target_mygame
+build CMakeFiles/LearnOpenGL.dir/src/openglErrorReporting.cpp.obj: CXX_COMPILER__LearnOpenGL_unscanned_Debug C$:/Code/openGL/src/openglErrorReporting.cpp || cmake_object_order_depends_target_LearnOpenGL
   DEFINES = -DGLFW_INCLUDE_NONE=1 -DPRODUCTION_BUILD=0 -DRESOURCES_PATH=\"C:/Code/openGL/resources/\"
-  DEP_FILE = CMakeFiles\mygame.dir\src\openglErrorReporting.cpp.obj.d
+  DEP_FILE = CMakeFiles\LearnOpenGL.dir\src\openglErrorReporting.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -IC:/Code/openGL/include -IC:/Code/openGL/thirdparty/glm/include -IC:/Code/openGL/thirdparty/glm -IC:/Code/openGL/thirdparty/glfw-3.3.2/include -IC:/Code/openGL/thirdparty/glad/include -IC:/Code/openGL/thirdparty/stb_image/include -IC:/Code/openGL/thirdparty/stb_truetype/include -IC:/Code/openGL/thirdparty/raudio/include -IC:/Code/openGL/thirdparty/imgui-docking/imgui
-  OBJECT_DIR = CMakeFiles\mygame.dir
-  OBJECT_FILE_DIR = CMakeFiles\mygame.dir\src
+  OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
+  OBJECT_FILE_DIR = CMakeFiles\LearnOpenGL.dir\src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target mygame
+# Link build statements for EXECUTABLE target LearnOpenGL
 
 
 #############################################
-# Link the executable mygame.exe
+# Link the executable LearnOpenGL.exe
 
-build mygame.exe: CXX_EXECUTABLE_LINKER__mygame_Debug CMakeFiles/mygame.dir/src/Camera.cpp.obj CMakeFiles/mygame.dir/src/EBO.cpp.obj CMakeFiles/mygame.dir/src/Shader.cpp.obj CMakeFiles/mygame.dir/src/Texture.cpp.obj CMakeFiles/mygame.dir/src/VAO.cpp.obj CMakeFiles/mygame.dir/src/VBO.cpp.obj CMakeFiles/mygame.dir/src/Window.cpp.obj CMakeFiles/mygame.dir/src/main.cpp.obj CMakeFiles/mygame.dir/src/openglErrorReporting.cpp.obj | thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/glad/libglad.a thirdparty/stb_image/libstb_image.a thirdparty/stb_truetype/libstb_truetype.a thirdparty/raudio/libraudio.a thirdparty/imgui-docking/libimgui.a thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/glad/libglad.a || thirdparty/glad/libglad.a thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/imgui-docking/libimgui.a thirdparty/raudio/libraudio.a thirdparty/stb_image/libstb_image.a thirdparty/stb_truetype/libstb_truetype.a
+build LearnOpenGL.exe: CXX_EXECUTABLE_LINKER__LearnOpenGL_Debug CMakeFiles/LearnOpenGL.dir/src/Camera.cpp.obj CMakeFiles/LearnOpenGL.dir/src/EBO.cpp.obj CMakeFiles/LearnOpenGL.dir/src/Shader.cpp.obj CMakeFiles/LearnOpenGL.dir/src/Texture.cpp.obj CMakeFiles/LearnOpenGL.dir/src/VAO.cpp.obj CMakeFiles/LearnOpenGL.dir/src/VBO.cpp.obj CMakeFiles/LearnOpenGL.dir/src/Window.cpp.obj CMakeFiles/LearnOpenGL.dir/src/main.cpp.obj CMakeFiles/LearnOpenGL.dir/src/openglErrorReporting.cpp.obj | thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/glad/libglad.a thirdparty/stb_image/libstb_image.a thirdparty/stb_truetype/libstb_truetype.a thirdparty/raudio/libraudio.a thirdparty/imgui-docking/libimgui.a thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/glad/libglad.a || thirdparty/glad/libglad.a thirdparty/glfw-3.3.2/src/libglfw3.a thirdparty/imgui-docking/libimgui.a thirdparty/raudio/libraudio.a thirdparty/stb_image/libstb_image.a thirdparty/stb_truetype/libstb_truetype.a
   FLAGS = -g
   LINK_LIBRARIES = thirdparty/glfw-3.3.2/src/libglfw3.a  thirdparty/glad/libglad.a  thirdparty/stb_image/libstb_image.a  thirdparty/stb_truetype/libstb_truetype.a  thirdparty/raudio/libraudio.a  thirdparty/imgui-docking/libimgui.a  thirdparty/glfw-3.3.2/src/libglfw3.a  thirdparty/glad/libglad.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\mygame.dir
+  OBJECT_DIR = CMakeFiles\LearnOpenGL.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = mygame.exe
-  TARGET_IMPLIB = libmygame.dll.a
-  TARGET_PDB = mygame.exe.dbg
+  TARGET_FILE = LearnOpenGL.exe
+  TARGET_IMPLIB = libLearnOpenGL.dll.a
+  TARGET_PDB = LearnOpenGL.exe.dbg
 
 
 #############################################
@@ -736,6 +736,8 @@ build thirdparty/imgui-docking/rebuild_cache: phony thirdparty/imgui-docking/CMa
 # =============================================================================
 # Target aliases.
 
+build LearnOpenGL: phony LearnOpenGL.exe
+
 build glad: phony thirdparty/glad/libglad.a
 
 build glfw: phony thirdparty/glfw-3.3.2/src/libglfw3.a
@@ -754,8 +756,6 @@ build libstb_image.a: phony thirdparty/stb_image/libstb_image.a
 
 build libstb_truetype.a: phony thirdparty/stb_truetype/libstb_truetype.a
 
-build mygame: phony mygame.exe
-
 build raudio: phony thirdparty/raudio/libraudio.a
 
 build stb_image: phony thirdparty/stb_image/libstb_image.a
@@ -770,7 +770,7 @@ build stb_truetype: phony thirdparty/stb_truetype/libstb_truetype.a
 #############################################
 # Folder: C:/Code/openGL/cmake-build-debug
 
-build all: phony mygame.exe thirdparty/glfw-3.3.2/all thirdparty/glad/all thirdparty/stb_image/all thirdparty/stb_truetype/all thirdparty/raudio/all thirdparty/glm/all thirdparty/imgui-docking/all
+build all: phony LearnOpenGL.exe thirdparty/glfw-3.3.2/all thirdparty/glad/all thirdparty/stb_image/all thirdparty/stb_truetype/all thirdparty/raudio/all thirdparty/glm/all thirdparty/imgui-docking/all
 
 # =============================================================================
 

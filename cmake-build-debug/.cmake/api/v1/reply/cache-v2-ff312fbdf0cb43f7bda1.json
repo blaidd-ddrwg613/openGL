@@ -458,6 +458,18 @@
 			"value" : "C:/Users/danie/AppData/Local/Programs/CLion/bin/mingw/bin/dlltool.exe"
 		},
 		{
+			"name" : "CMAKE_ERROR_DEPRECATED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Whether to issue deprecation errors for macros and functions."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "FALSE"
+		},
+		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
 			"properties" : 
 			[
@@ -875,7 +887,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/mygame"
+			"value" : "C:/Program Files (x86)/LearnOpenGL"
 		},
 		{
 			"name" : "CMAKE_INSTALL_RUNSTATEDIR",
@@ -1155,7 +1167,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "mygame"
+			"value" : "LearnOpenGL"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -1578,6 +1590,30 @@
 			"value" : "C:/Users/danie/AppData/Local/Programs/CLion/bin/mingw/bin/strip.exe"
 		},
 		{
+			"name" : "CMAKE_SUPPRESS_DEVELOPER_ERRORS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Suppress errors that are meant for the author of the CMakeLists.txt files."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "TRUE"
+		},
+		{
+			"name" : "CMAKE_SUPPRESS_DEVELOPER_WARNINGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Suppress Warnings that are meant for the author of the CMakeLists.txt files."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "TRUE"
+		},
+		{
 			"name" : "CMAKE_VERBOSE_MAKEFILE",
 			"properties" : 
 			[
@@ -1591,6 +1627,18 @@
 				}
 			],
 			"type" : "BOOL",
+			"value" : "FALSE"
+		},
+		{
+			"name" : "CMAKE_WARN_DEPRECATED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Whether to issue warnings for deprecated functionality."
+				}
+			],
+			"type" : "INTERNAL",
 			"value" : "FALSE"
 		},
 		{
@@ -1726,6 +1774,42 @@
 			"value" : "OFF"
 		},
 		{
+			"name" : "LearnOpenGL_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Code/openGL/cmake-build-debug"
+		},
+		{
+			"name" : "LearnOpenGL_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "LearnOpenGL_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Code/openGL"
+		},
+		{
 			"name" : "PRODUCTION_BUILD",
 			"properties" : 
 			[
@@ -1807,7 +1891,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Program Files (x86)/mygame"
+			"value" : "C:/Program Files (x86)/LearnOpenGL"
 		},
 		{
 			"name" : "glad_BINARY_DIR",
@@ -1928,42 +2012,6 @@
 			],
 			"type" : "STATIC",
 			"value" : "C:/Code/openGL/thirdparty/imgui-docking"
-		},
-		{
-			"name" : "mygame_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Code/openGL/cmake-build-debug"
-		},
-		{
-			"name" : "mygame_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "mygame_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Code/openGL"
 		},
 		{
 			"name" : "raudio_BINARY_DIR",

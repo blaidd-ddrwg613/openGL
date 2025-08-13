@@ -1,9 +1,11 @@
 #include "Window.h"
 
+int Window::width, Window::height;
+
 Window::Window(int width, int height, const char* title)
 {
-    this->width = width;
-    this->height = height;
+    Window::width = width;
+    Window::height = height;
 
     if (!glfwInit())
     {
@@ -16,8 +18,8 @@ Window::Window(int width, int height, const char* title)
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     // Create window
-    window = glfwCreateWindow(width, height, title, NULL, NULL);
-    if (window == NULL)
+    window = glfwCreateWindow(width, height, title, nullptr, nullptr);
+    if (window == nullptr)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate();

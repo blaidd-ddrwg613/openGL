@@ -13,11 +13,11 @@ public:
     static void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 
     GLFWwindow* GetWindow();
-    int GetWindowWidth();
-    int GetWindowHeight();
+    static int GetWindowWidth();
+    static int GetWindowHeight();
 
 private:
     GLFWwindow* window;
-    int width, height;
+    static int width, height;
     const char* title;
 };

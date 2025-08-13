@@ -2,6 +2,9 @@
 
 Shader::Shader(const char *vertexPath, const char *fragmentPath)
 {
+    fPath = fragmentPath;
+    vPath = vertexPath;
+
     // 1. retrieve the vertex/fragment source code from filePath
     std::string vertexCode;
     std::string fragmentCode;
@@ -49,7 +52,7 @@ Shader::Shader(const char *vertexPath, const char *fragmentPath)
     if (!success)
     {
         glGetShaderInfoLog(vertex, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
+        std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << vPath << infoLog << std::endl;
     }
 
     // Fragment Shader
@@ -62,7 +65,7 @@ Shader::Shader(const char *vertexPath, const char *fragmentPath)
     if (!success)
     {
         glGetShaderInfoLog(fragment, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
+        std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED" << fPath << infoLog << std::endl;
     }
 
     // Shader Program
@@ -79,6 +82,8 @@ Shader::Shader(const char *vertexPath, const char *fragmentPath)
         std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
     }
 
+    vPath = "";
+    fPath = "";
     // Delete the Shaders
     glDeleteShader(vertex);
     glDeleteShader(fragment);

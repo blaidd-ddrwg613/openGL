@@ -19,13 +19,13 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.16"
+						"string" : "3.20"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						3
+						0
 					]
 				},
 				{
@@ -55,7 +55,7 @@
 					"source" : "thirdparty/glfw-3.3.2/src",
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
@@ -70,7 +70,7 @@
 					"source" : "thirdparty/glad",
 					"targetIndexes" : 
 					[
-						0
+						1
 					]
 				},
 				{
@@ -141,7 +141,7 @@
 					"source" : "thirdparty/imgui-docking",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				}
 			],
@@ -163,10 +163,10 @@
 					[
 						0
 					],
-					"name" : "mygame",
+					"name" : "LearnOpenGL",
 					"targetIndexes" : 
 					[
-						3
+						0
 					]
 				},
 				{
@@ -179,7 +179,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
@@ -191,7 +191,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						0
+						1
 					]
 				},
 				{
@@ -247,12 +247,19 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 0,
+					"id" : "LearnOpenGL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LearnOpenGL-Debug-c9ac309c32b4aac821ce.json",
+					"name" : "LearnOpenGL",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 3,
 					"id" : "glad::@140c1f658771f9cc4abc",
@@ -273,13 +280,6 @@
 					"jsonFile" : "target-imgui-Debug-3a988e5c527e1256ffc8.json",
 					"name" : "imgui",
 					"projectIndex" : 7
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "mygame::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-mygame-Debug-e29d20da78ed09c039b0.json",
-					"name" : "mygame",
-					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 6,

@@ -5,5 +5,4 @@
 namespace Input
 {
     static bool IsKeyPressed(int keycode) { return glfwGetKey(glfwGetCurrentContext(), keycode) == GLFW_PRESS; }
-
 };

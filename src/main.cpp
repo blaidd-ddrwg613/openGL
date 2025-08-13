@@ -1,6 +1,5 @@
 #include "glm/glm.hpp"
 #include "glm/gtc/matrix_transform.hpp"
-#include <glm/gtc/type_ptr.hpp>
 
 #include "Shader.h"
 #include "Texture.h"
@@ -15,13 +14,10 @@ void processInput(GLFWwindow* window);
 void mouse_callback(GLFWwindow* window, double xposIn, double yposIn);
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 
-int SCR_WIDTH = 1080;
-int SCR_HEIGHT = 720;
-
 Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
 bool firstMouse = true;
-float lastX = SCR_WIDTH / 2.0f;
-float lastY = SCR_HEIGHT / 2.0f;
+float lastX = Window::GetWindowWidth() / 2.0f;
+float lastY = Window::GetWindowHeight() / 2.0f;
 
 float deltaTime = 0.0f; // Time between current frame and last frame
 float lastFrame = 0.0f; // Time since last frame
@@ -29,6 +25,9 @@ float lastFrame = 0.0f; // Time since last frame
 float aspect;
 float zNear = 0.1f;
 float zFar = 100.0f;
+
+// lighting
+glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
 
 int main()
 {
@@ -40,19 +39,19 @@ int main()
     glfwSetCursorPosCallback(window.GetWindow(), mouse_callback);
     glfwSetScrollCallback(window.GetWindow(), scroll_callback);
 
-    // Rectangle vertices
-    float vertices[] = {
-            // positions (x,y,z)               // Color(r,g,b)           // texture coords(tx, ty)
-            0.5f,  0.5f, 0.0f,    1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // top right
-            0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,1.0f, 0.0f,   // bottom right
-            -0.5f, -0.5f, 0.0f,0.0f, 0.0f, 1.0f,0.0f, 0.0f,   // bottom left
-            -0.5f,  0.5f, 0.0f,1.0f, 1.0f, 0.0f,0.0f, 1.0f    // top left
-    };
-
-    unsigned int indices[] = {
-            0, 1, 3, // first triangle
-            1, 2, 3  // second triangle
-    };
+//    // Rectangle vertices
+//    float vertices[] = {
+//            // positions (x,y,z)               // Color(r,g,b)           // texture coords(tx, ty)
+//            0.5f,  0.5f, 0.0f,    1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // top right
+//            0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,1.0f, 0.0f,   // bottom right
+//            -0.5f, -0.5f, 0.0f,0.0f, 0.0f, 1.0f,0.0f, 0.0f,   // bottom left
+//            -0.5f,  0.5f, 0.0f,1.0f, 1.0f, 0.0f,0.0f, 1.0f    // top left
+//    };
+//
+//    unsigned int indices[] = {
+//            0, 1, 3, // first triangle
+//            1, 2, 3  // second triangle
+//    };
 
     // All Faces of a Cube and its texture coords
     float vertices_Cube[] = {
@@ -96,40 +95,8 @@ int main()
             0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
             0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
             -0.5f,  0.5f,  0.5f,  0.0f, 0.0f,
-            -0.5f,  0.5f, -0.5f,  0.0f, 1.0f
+            -0.5f,  0.5f, -0.5f,
     };
-
-    glm::vec3 cubePositions[] = {
-            glm::vec3( 0.0f,  0.0f,  0.0f),
-            glm::vec3( 2.0f,  5.0f, -15.0f),
-            glm::vec3(-1.5f, -2.2f, -2.5f),
-            glm::vec3(-3.8f, -2.0f, -12.3f),
-            glm::vec3( 2.4f, -0.4f, -3.5f),
-            glm::vec3(-1.7f,  3.0f, -7.5f),
-            glm::vec3( 1.3f, -2.0f, -2.5f),
-            glm::vec3( 1.5f,  2.0f, -2.5f),
-            glm::vec3( 1.5f,  0.2f, -1.5f),
-            glm::vec3(-1.3f,  1.0f, -1.5f)
-    };
-
-
-    // Generates Vertex Array Object and binds it
-    VAO VAO1;
-    VAO1.Bind();
-
-    // Generates Vertex Buffer Object and links it to vertices
-    VBO VBO1(vertices, sizeof(vertices));
-    // Generates Element Buffer Object and links it to indices
-    EBO EBO1(indices, sizeof(indices));
-
-    // Links VBO attributes such as coordinates and colors to VAO
-    VAO1.LinkAttrib(VBO1, 0, 3, GL_FLOAT, 8 * sizeof(float), (void*)0);
-    VAO1.LinkAttrib(VBO1, 1, 3, GL_FLOAT, 8 * sizeof(float), (void*)(3 * sizeof(float)));
-    VAO1.LinkAttrib(VBO1, 2, 2, GL_FLOAT, 8 * sizeof(float), (void*)(6 * sizeof(float)));
-    // Unbind all to prevent accidentally modifying them
-    VAO1.Unbind();
-    VBO1.Unbind();
-    EBO1.Unbind();
 
     // Cube Render
     VAO VAO_Cube;
@@ -137,27 +104,27 @@ int main()
 
     VBO VBO_Cube(vertices_Cube, sizeof(vertices_Cube));
     VAO_Cube.LinkAttrib(VBO_Cube, 0, 3, GL_FLOAT, 5 * sizeof(float), (void*)0);
-    VAO_Cube.LinkAttrib(VBO_Cube, 2, 2, GL_FLOAT, 5 * sizeof(float), (void*)(3 * sizeof(float)));
+//    VAO_Cube.LinkAttrib(VBO_Cube, 2, 2, GL_FLOAT, 5 * sizeof(float), (void*)(3 * sizeof(float)));
     VAO_Cube.Unbind();
     VBO_Cube.Unbind();
 
+    // Create a cube to use as a light source
+    VAO VAO_Light;
+    VAO_Light.Bind();
+
+    VBO VBO_Light(vertices_Cube, sizeof(vertices_Cube));
+    VAO_Light.LinkAttrib(VBO_Light, 0, 3, GL_FLOAT, 5 * sizeof(float), (void*)0);
+//    VAO_Light.LinkAttrib(VBO_Light, 2, 2, GL_FLOAT, 5 * sizeof(float), (void*)(3 * sizeof(float)));
+    VAO_Light.Unbind();
+    VBO_Light.Unbind();
+
+    // Light Shaders
+    Shader lightShader(RESOURCES_PATH"shaders/light.vert", RESOURCES_PATH"shaders/light.frag");
+    Shader lightCubeShader(RESOURCES_PATH"shaders/light_source.vert", RESOURCES_PATH"shaders/light_source.frag");
+
+    // Cube Shader
     Shader defaultShader(RESOURCES_PATH"shaders/default.vert", RESOURCES_PATH"shaders/default.frag");
-    Texture containerTexture(RESOURCES_PATH"textures/container.jpg", false);
-    Texture awesomeTexture(RESOURCES_PATH"textures/awesomeface.png", true);
-    defaultShader.use();
 
-    // tell opengl for each sampler to which texture unit it belongs to (only has to be done once)
-    // -------------------------------------------------------------------------------------------
-    defaultShader.setInt("texture1", 0);
-    defaultShader.setInt("texture2", 1);
-    defaultShader.setVec3("color", 0.5, 0.4, 0.7);
-    defaultShader.setFloat("alpha", 0.2);
-
-    // bind textures on corresponding texture units
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, containerTexture.ID);
-    glActiveTexture(GL_TEXTURE1);
-    glBindTexture(GL_TEXTURE_2D, awesomeTexture.ID);
 
     // Application Loop
     while (!glfwWindowShouldClose(window.GetWindow()))
@@ -174,39 +141,41 @@ int main()
 
         // render
         // ------
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        // bind textures on corresponding texture units
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, containerTexture.ID);
-        glActiveTexture(GL_TEXTURE1);
-        glBindTexture(GL_TEXTURE_2D, awesomeTexture.ID);
+        // be sure to activate shader when setting uniforms/drawing objects
+        lightShader.use();
+        lightShader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
+        lightShader.setVec3("lightColor",  1.0f, 1.0f, 1.0f);
 
-        // activate shader
-        defaultShader.use();
-
-        // pass projection matrix to shader (note that in this case it could change every frame)
-        glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
-        defaultShader.setMat4("projection", projection);
-
-        // camera/view transformation
+        // view/projection transformations
+        glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)Window::GetWindowWidth() / (float)Window::GetWindowHeight(), 0.1f, 100.0f);
         glm::mat4 view = camera.GetViewMatrix();
-        defaultShader.setMat4("view", view);
+        lightShader.setMat4("projection", projection);
+        lightShader.setMat4("view", view);
 
-        // render boxes
+        // world transformation
+        glm::mat4 model = glm::mat4(1.0f);
+        lightShader.setMat4("model", model);
+
+        // render the cube
         glBindVertexArray(VAO_Cube.ID);
-        for (unsigned int i = 0; i < 10; i++)
-        {
-            // calculate the model matrix for each object and pass it to shader before drawing
-            glm::mat4 model = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
-            model = glm::translate(model, cubePositions[i]);
-            float angle = 20.0f * i;
-            model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
-            defaultShader.setMat4("model", model);
+        glDrawArrays(GL_TRIANGLES, 0, 36);
 
-            glDrawArrays(GL_TRIANGLES, 0, 36);
-        }
+
+        // also draw the lamp object
+        lightCubeShader.use();
+        lightCubeShader.setMat4("projection", projection);
+        lightCubeShader.setMat4("view", view);
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, lightPos);
+        model = glm::scale(model, glm::vec3(0.2f)); // a smaller cube
+        lightCubeShader.setMat4("model", model);
+
+        glBindVertexArray(VAO_Light.ID);
+        glDrawArrays(GL_TRIANGLES, 0, 36);
+
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------
@@ -214,9 +183,8 @@ int main()
         glfwPollEvents();
     }
 
-    VAO1.Delete();
-    VBO1.Delete();
-    EBO1.Delete();
+    VAO_Cube.Delete();
+    VAO_Light.Delete();
 
     return 0;
 }
@@ -231,13 +199,13 @@ void processInput(GLFWwindow *window)
     camera.SetBoost(Input::IsKeyPressed(GLFW_KEY_LEFT_SHIFT));
 
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-        camera.ProcessKeyboard(FORWARD, deltaTime);
+        camera.ProcessKeyboard(Camera_Movement::FORWARD, deltaTime);
     if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-        camera.ProcessKeyboard(BACKWARD, deltaTime);
+        camera.ProcessKeyboard(Camera_Movement::BACKWARD, deltaTime);
     if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-        camera.ProcessKeyboard(LEFT, deltaTime);
+        camera.ProcessKeyboard(Camera_Movement::LEFT, deltaTime);
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-        camera.ProcessKeyboard(RIGHT, deltaTime);
+        camera.ProcessKeyboard(Camera_Movement::RIGHT, deltaTime);
 }
 
 // glfw: whenever the mouse moves, this callback is called
