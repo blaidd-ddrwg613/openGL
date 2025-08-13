@@ -25,7 +25,4 @@ public:
     void setFloat(const std::string& name , float value) const;
     void setVec3(const std::string& name , float r, float g, float b) const;
     void setMat4(const std::string &name, const glm::mat4 &mat) const;
-private:
-    const char* vPath;
-    const char* fPath;
 };
