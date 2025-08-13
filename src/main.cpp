@@ -11,7 +11,12 @@
 
 void processInput(GLFWwindow* window);
 
+glm::vec3 cameraPos   = glm::vec3(0.0f, 0.0f,  3.0f);
+glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
+glm::vec3 cameraUp    = glm::vec3(0.0f, 1.0f,  0.0f);
 
+float deltaTime = 0.0f; // Time between current frame and last frame
+float lastFrame = 0.0f; // Time since last frame
 
 int main()
 {
@@ -23,7 +28,7 @@ int main()
 
     // Rectangle vertices
     float vertices[] = {
-            // positions          // Color           // texture coords
+            // positions (x,y,z)               // Color(r,g,b)           // texture coords(tx, ty)
             0.5f,  0.5f, 0.0f,    1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // top right
             0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,1.0f, 0.0f,   // bottom right
             -0.5f, -0.5f, 0.0f,0.0f, 0.0f, 1.0f,0.0f, 0.0f,   // bottom left
@@ -148,27 +153,13 @@ int main()
     // Application Loop
     while (!glfwWindowShouldClose(window.GetWindow()))
     {
+        // Calculate Delta Time
+        float currentFrame = glfwGetTime();
+        deltaTime = currentFrame - lastFrame;
+        lastFrame = currentFrame;
+
         // input
         processInput(window.GetWindow());
-
-        if (glfwGetKey(window.GetWindow(), GLFW_KEY_W) == GLFW_PRESS)
-        {
-            if (fov > 180.0f)
-            {
-                fov = 180.0f;
-            }
-            fov += 0.05f;
-        }
-        if (glfwGetKey(window.GetWindow(), GLFW_KEY_S) == GLFW_PRESS)
-        {
-            if (fov < 45.0f)
-            {
-                fov = 45.0f;
-            }
-            fov -= 0.05f;
-        }
-
-        std::cout << "FOV: " << fov << std::endl;
 
         // Rendering
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
@@ -180,12 +171,15 @@ int main()
         // Matrices
         glm::mat4 trans = glm::mat4(1.0f);
         glm::mat4 model = glm::mat4(1.0f);
-        glm::mat4 view = glm::mat4(1.0f);
+        glm::mat4 view;
         glm::mat4 projection;
+
+        // Camera LookAt Mat
+        view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
+
 
         // Matrix Transformations
 //        model = glm::rotate(model, glm::radians(-55.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-        view = glm::translate(view, glm::vec3 (0.0f, 0.0f, -3.0f));
         projection = glm::perspective(glm::radians(fov), aspect , zNear, zFar);
 
         model = glm::rotate(model, (float) glfwGetTime() * glm::radians(50.0f), glm::vec3(0.5f, 1.0f, 0.0f));
@@ -234,4 +228,14 @@ void processInput(GLFWwindow* window)
 {
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, GLFW_TRUE);
+
+    const float cameraSpeed = 5.5f * deltaTime;
+    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+        cameraPos += cameraSpeed * cameraFront;
+    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+        cameraPos -= cameraSpeed * cameraFront;
+    if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+        cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+        cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
 }
