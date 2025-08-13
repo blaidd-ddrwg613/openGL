@@ -122,6 +122,12 @@ int main()
     lightShader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
     lightShader.setVec3("lightColor",  1.0f, 1.0f, 1.0f);
 
+    // Material Settings
+    lightShader.setVec3("material.diffuse", 1.0f, 0.5f, 0.31f);
+    lightShader.setVec3("material.ambient", 1.0f, 0.5f, 0.31f);
+    lightShader.setVec3("material.specular", 0.5f, 0.5f, 0.5f);
+    lightShader.setFloat("material.shininess", 32.0f);
+
     Shader lightCubeShader(RESOURCES_PATH"shaders/light_source.vert", RESOURCES_PATH"shaders/light_source.frag");
     lightCubeShader.use();
 
@@ -149,12 +155,32 @@ int main()
 
         // be sure to activate shader when setting uniforms/drawing objects
         lightShader.use();
+        lightShader.setVec3("light.position", lightPos);
+        lightShader.setVec3("viewPos", camera.Position);
 
         // view/projection transformations
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)Window::GetWindowWidth() / (float)Window::GetWindowHeight(), 0.1f, 100.0f);
         glm::mat4 view = camera.GetViewMatrix();
         lightShader.setMat4("projection", projection);
         lightShader.setMat4("view", view);
+        
+        // Lighting
+        // light properties
+        glm::vec3 lightColor;
+        lightColor.x = static_cast<float>(sin(glfwGetTime() * 2.0));
+        lightColor.y = static_cast<float>(sin(glfwGetTime() * 0.7));
+        lightColor.z = static_cast<float>(sin(glfwGetTime() * 1.3));
+        glm::vec3 diffuseColor = lightColor   * glm::vec3(0.5f); // decrease the influence
+        glm::vec3 ambientColor = diffuseColor * glm::vec3(0.2f); // low influence
+        lightShader.setVec3("light.ambient", ambientColor);
+        lightShader.setVec3("light.diffuse", diffuseColor);
+        lightShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
+
+        // material properties
+        lightShader.setVec3("material.ambient", 1.0f, 0.5f, 0.31f);
+        lightShader.setVec3("material.diffuse", 1.0f, 0.5f, 0.31f);
+        lightShader.setVec3("material.specular", 0.5f, 0.5f, 0.5f); // specular lighting doesn't have full effect on this object's material
+        lightShader.setFloat("material.shininess", 32.0f);
 
         // world transformation
         glm::mat4 model = glm::mat4(1.0f);
